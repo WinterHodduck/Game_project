@@ -27,7 +27,7 @@
                 <option value="업데이트">업데이트</option>
             </select>
 
-            <input type="text" id="searchInput" placeholder="제목 검색" />
+            <input type="text" id="searchInput" placeholder="제목/내용 검색" />
             <button type="button" id="searchBtn">검색</button>
             <a href="./notice-write.html"><button type="button">공지 작성</button></a>
         </section>
@@ -44,77 +44,17 @@
                     <th width="20%">작성일</th>
                 </tr>
             </thead>
-            <tbody id="noticeTableBody">
+            <tbody id="noticeTbody">
                 <tr>
                     <td colspan="5" align="center">불러오는 중...</td>
                 </tr>
             </tbody>
         </table>
+
+        <nav id="pagination" aria-label="공지사항 페이지네이션" style="margin-top: 12px; text-align: center;"></nav>
     </main>
 
     <script src="./notice.js"></script>
-    <script>
-        const tableBody = document.getElementById("noticeTableBody");
-        const categoryFilter = document.getElementById("categoryFilter");
-        const searchInput = document.getElementById("searchInput");
-        const searchBtn = document.getElementById("searchBtn");
-
-        let cachedNotices = [];
-
-        async function loadNoticeList() {
-            try {
-                const category = categoryFilter.value;
-                const url = category
-                    ? `${API_BASE}?category=${encodeURIComponent(category)}`
-                    : API_BASE;
-
-                cachedNotices = await requestNotice(url);
-                renderTable();
-            } catch (err) {
-                tableBody.innerHTML = `<tr><td colspan="5" align="center">${escapeHtml(err.message)}</td></tr>`;
-            }
-        }
-
-        function renderTable() {
-            const keyword = searchInput.value.trim().toLowerCase();
-            const filtered = keyword
-                ? cachedNotices.filter((n) => n.title.toLowerCase().includes(keyword))
-                : cachedNotices;
-
-            if (filtered.length === 0) {
-                tableBody.innerHTML = `<tr><td colspan="5" align="center">등록된 공지사항이 없습니다.</td></tr>`;
-                return;
-            }
-
-            tableBody.innerHTML = filtered
-                .map((notice) => {
-                    const pinBadge = notice.isPinned ? "<strong>[고정]</strong> " : "";
-                    return `
-              <tr>
-                <td align="center">${escapeHtml(notice.category)}</td>
-                <td>
-                  ${pinBadge}
-                  <a href="./notice-detail.html?id=${encodeURIComponent(notice.id)}">
-                    ${escapeHtml(notice.title)}
-                  </a>
-                </td>
-                <td align="center">${escapeHtml(notice.author)}</td>
-                <td align="center">${notice.views ?? 0}</td>
-                <td align="center">${formatDate(notice.createdAt)}</td>
-              </tr>
-            `;
-                })
-                .join("");
-        }
-
-        categoryFilter.addEventListener("change", loadNoticeList);
-        searchBtn.addEventListener("click", renderTable);
-        searchInput.addEventListener("keyup", (e) => {
-            if (e.key === "Enter") renderTable();
-        });
-
-        loadNoticeList();
-    </script>
 </body>
 
 </html>

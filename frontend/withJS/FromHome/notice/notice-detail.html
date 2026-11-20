@@ -39,7 +39,7 @@
             }
 
             try {
-                const notice = await requestNotice(`${API_BASE}/${encodeURIComponent(noticeId)}`);
+                const notice = await requestNotice(`${API_BASE}/api/notices/${encodeURIComponent(noticeId)}`);
                 const pinText = notice.isPinned ? "[상단고정] " : "";
                 const updatedText = notice.updatedAt ? ` | 수정일: ${formatDate(notice.updatedAt)}` : "";
 
@@ -70,7 +70,7 @@
             if (!confirm("정말 이 공지사항을 삭제하시겠습니까?")) return;
 
             try {
-                await requestNotice(`${API_BASE}/${encodeURIComponent(noticeId)}`, {
+                await requestNotice(`${API_BASE}/api/notices/${encodeURIComponent(noticeId)}`, {
                     method: "DELETE",
                 });
                 alert("삭제되었습니다.");

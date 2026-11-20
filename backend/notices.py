@@ -1,5 +1,6 @@
 from datetime import datetime, timezone
 import json
+import math
 import os
 from pathlib import Path
 import threading
@@ -68,19 +69,53 @@ def sort_notices(notices: list[dict]) -> list[dict]:
 def list_notices(
     include_unpublished: bool = Query(default=False),
     category: str | None = Query(default=None),
+    q: str | None = Query(default=None),
+    search: str | None = Query(default=None),
+    page: int = Query(default=1, ge=1, description="페이지 번호 (1부터 시작)"),
+    size: int = Query(default=10, ge=1, le=100, description="페이지당 항목 수"),
 ):
     with file_lock:
         notices = load_notices()
 
-    result = []
+    clean_category = category.strip() if category and category.strip() else None
+    keyword = ((q or search) or "").strip().lower()
+
+    filtered = []
     for n in notices:
         if not include_unpublished and not n.get("isPublished", True):
             continue
-        if category and n.get("category") != category:
-            continue
-        result.append(n)
 
-    return sort_notices(result)
+        if clean_category and clean_category not in ("전체", "all", "ALL"):
+            if str(n.get("category", "")).strip() != clean_category:
+                continue
+
+        if keyword:
+            title = str(n.get("title", "")).lower()
+            content = str(n.get("content", "")).lower()
+            author = str(n.get("author", "")).lower()
+            notice_category = str(n.get("category", "")).lower()
+            if keyword not in f"{title} {content} {author} {notice_category}":
+                continue
+
+        filtered.append(n)
+
+    sorted_items = sort_notices(filtered)
+    total = len(sorted_items)
+    total_pages = math.ceil(total / size) if total > 0 else 1
+
+    # 요청 페이지가 총 페이지 수를 초과하면 마지막 페이지로 보정
+    current_page = min(page, total_pages)
+    start = (current_page - 1) * size
+    end = start + size
+    paged_items = sorted_items[start:end]
+
+    return {
+        "items": paged_items,
+        "total": total,
+        "page": current_page,
+        "size": size,
+        "totalPages": total_pages,
+    }
 
 
 @router.get("/{notice_id}")
