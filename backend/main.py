@@ -26,3 +26,4 @@ def random_monsters():
     monsters=load_monsters()
     return random.sample(monsters,k=3)
 
+app.include_router(notices_router)
