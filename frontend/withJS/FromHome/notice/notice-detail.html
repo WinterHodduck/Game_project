@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하얀사막 - 공지 상세</title>
+</head>
+
+<body>
+    <header>
+        <h1>공지사항 상세</h1>
+    </header>
+
+    <main id="detailContainer">
+        <p>불러오는 중...</p>
+    </main>
+
+    <hr />
+
+    <div>
+        <a href="./notice.html"><button type="button">목록으로</button></a>
+        <button type="button" id="editBtn">수정</button>
+        <button type="button" id="deleteBtn">삭제</button>
+    </div>
+
+    <script src="./notice.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const noticeId = params.get("id");
+        const container = document.getElementById("detailContainer");
+        const editBtn = document.getElementById("editBtn");
+        const deleteBtn = document.getElementById("deleteBtn");
+
+        async function loadDetail() {
+            if (!noticeId) {
+                container.innerHTML = "<p>잘못된 접근입니다.</p>";
+                return;
+            }
+
+            try {
+                const notice = await requestNotice(`${API_BASE}/${encodeURIComponent(noticeId)}`);
+                const pinText = notice.isPinned ? "[상단고정] " : "";
+                const updatedText = notice.updatedAt ? ` | 수정일: ${formatDate(notice.updatedAt)}` : "";
+
+                container.innerHTML = `
+            <article>
+              <h2>${pinText}[${escapeHtml(notice.category)}] ${escapeHtml(notice.title)}</h2>
+              <p>
+                작성자: ${escapeHtml(notice.author)} |
+                조회수: ${notice.views ?? 0} |
+                작성일: ${formatDate(notice.createdAt)}${updatedText}
+              </p>
+              <hr />
+              <pre style="white-space: pre-wrap; font-family: inherit;">${escapeHtml(notice.content)}</pre>
+            </article>
+          `;
+            } catch (err) {
+                container.innerHTML = `<p>${escapeHtml(err.message)}</p>`;
+            }
+        }
+
+        editBtn.addEventListener("click", () => {
+            if (!noticeId) return;
+            location.href = `./notice-write.html?id=${encodeURIComponent(noticeId)}`;
+        });
+
+        deleteBtn.addEventListener("click", async () => {
+            if (!noticeId) return;
+            if (!confirm("정말 이 공지사항을 삭제하시겠습니까?")) return;
+
+            try {
+                await requestNotice(`${API_BASE}/${encodeURIComponent(noticeId)}`, {
+                    method: "DELETE",
+                });
+                alert("삭제되었습니다.");
+                location.href = "./notice.html";
+            } catch (err) {
+                alert(err.message);
+            }
+        });
+
+        loadDetail();
+    </script>
+</body>
+
+</html>

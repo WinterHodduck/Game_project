@@ -3,6 +3,7 @@ import random
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from pathlib import Path
+from notices import router as notices_router  # 추가
 
 app = FastAPI()
 
