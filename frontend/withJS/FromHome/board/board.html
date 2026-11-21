@@ -6,15 +6,18 @@
     <title>하얀사막 - 게시판</title>
   </head>
   <body>
-    <header>
-      <h1>게시판</h1>
-      <a href="../index.html"><button>홈으로</button></a>
-      <button>전체 게시글 보기</button>
-      <button>게시글 작성하기</button>
-    </header>
+    <div id="header"></div>
     <main>
-      <h2>통합 게시판</h2>
-      <div id="boardList"></div>
+      <section>
+        <h3>추천 게시글</h3>
+        <ul id="bestList"></ul>
+      </section>
+      <section>
+        <h3>최신 게시글</h3>
+        <ul id="latestList"></ul>
+      </section>
     </main>
+    <script src="include.js"></script>
+    <script src="./board.js"></script>
   </body>
 </html>
