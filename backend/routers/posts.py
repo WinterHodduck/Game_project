@@ -1,5 +1,9 @@
 import json
+<<<<<<< HEAD
 from fastapi import APIRouter,Query
+=======
+from fastapi import APIRouter
+>>>>>>> origin/KH
 from pathlib import Path
 
 router = APIRouter(prefix="/api/posts", tags=["posts"])
@@ -13,6 +17,7 @@ def get_posts():
 
 
 @router.get("")
+<<<<<<< HEAD
 def get_all_posts(page: int = Query(1,ge=1),size:int = Query(10,ge=1,le=50)):
     #게시글 최신순 배열
     posts = json.load(DATA_PATH.read_text(encoding="utf-8"))
@@ -27,6 +32,10 @@ def get_all_posts(page: int = Query(1,ge=1),size:int = Query(10,ge=1,le=50)):
         "totalPages":(total+size -1) //size,
         "items":posts[start:start+size]
     }
+=======
+def get_all_posts():
+    return get_posts()
+>>>>>>> origin/KH
 
 
 @router.get("/best")
