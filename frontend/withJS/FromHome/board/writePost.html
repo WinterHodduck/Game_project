@@ -9,14 +9,24 @@
     <div id="header"></div>
     <main>
       <h2>글쓰기</h2>
-
-      <form id="postForm"></form>
-      <div>
-        <label for="author"></label>
-        <input type="text" maxlength="20" required />
-      </div>
+      <form id="postForm">
+        <div>
+          <label for="author">작성자</label>
+          <input type="text" id="author" maxlength="20" required />
+        </div>
+        <div>
+          <label for="title">제목</label>
+          <input type="text" id="title" maxlength="100" required />
+        </div>
+        <div>
+          <label for="content">내용</label>
+          <textarea id="content" rows="12" required></textarea>
+        </div>
+        <button type="submit">등록</button>
+        <a href="allPosts.html"><button type="button">취소</button></a>
+      </form>
     </main>
-
     <script src="include.js"></script>
+    <script src="writePost.js"></script>
   </body>
 </html>

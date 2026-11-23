@@ -1,6 +1,8 @@
 import json
 from fastapi import APIRouter,Query
 from pathlib import Path
+from datetime import datetime
+from pydantic import BaseModel, Field
 
 # 공통 URL 접두사가 붙은 router 객체 생성
 router = APIRouter(prefix="/api/posts", tags=["posts"])
@@ -54,3 +56,25 @@ def get_latest_posts(limit: int = Query(10,ge=1,le=50)):
     # 위 함수와 동일한 매개변수, 단 기본값을 10으로 설정
     return sorted(get_posts(), key=lambda p: p["createdAt"], reverse=True)[:limit]
 # 위의 sorted를 사용한 이유와 동일
+
+
+# 클라이언트가 보내야 하는 데이터의 형태와 검증 규칙
+class PostCreate(BaseModel):
+    title: str = Field(min_length=1, max_length=100)
+    author: str = Field(min_length=1, max_length=20)
+    content: str = Field(min_length=1)
+
+# 리스트를 JSON 파일로 저장하는 도우미 함수
+def save_posts(posts):
+    DATA_PATH.write_text(
+        json.dumps(posts, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+# POST / api/posts 요청을 처리하는 핸들러
+@router.post("",status_code=201)
+def create_post(body: PostCreate):
+    posts = get_posts()
+    new_post = {
+        "id" : max((p["id"] for p in posts),default=0) +1,
+        "title": body.title
+    }
