@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하얀사막 - 공지사항</title>
+</head>
+
+<body>
+    <header>
+        <h1>공지사항</h1>
+        <nav>
+            <a href="../../index.html">메인화면</a> |
+            <a href="../monster/monster.html">몬스터 도감</a> |
+            <a href="../board/board.html">게시판</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <select id="categoryFilter">
+                <option value="">전체 카테고리</option>
+                <option value="일반">일반</option>
+                <option value="점검">점검</option>
+                <option value="이벤트">이벤트</option>
+                <option value="업데이트">업데이트</option>
+            </select>
+
+            <input type="text" id="searchInput" placeholder="제목/내용 검색" />
+            <button type="button" id="searchBtn">검색</button>
+            <a href="./notice-write.html"><button type="button">공지 작성</button></a>
+        </section>
+
+        <hr />
+
+        <table border="1" width="100%" cellspacing="0" cellpadding="8">
+            <thead>
+                <tr>
+                    <th width="10%">구분</th>
+                    <th width="45%">제목</th>
+                    <th width="15%">작성자</th>
+                    <th width="10%">조회수</th>
+                    <th width="20%">작성일</th>
+                </tr>
+            </thead>
+            <tbody id="noticeTbody">
+                <tr>
+                    <td colspan="5" align="center">불러오는 중...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav id="pagination" aria-label="공지사항 페이지네이션" style="margin-top: 12px; text-align: center;"></nav>
+    </main>
+
+    <script src="./notice.js"></script>
+</body>
+
+</html>
