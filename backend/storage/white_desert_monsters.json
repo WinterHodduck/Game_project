@@ -1361,7 +1361,7 @@
     ],
     "attack": 91,
     "description": "사막 지하 깊은 곳의 어둠을 품고 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_white_minotaur.png"
+    "image": "./image/monster62.jpg"
   },
   {
     "id": 63,
@@ -1386,7 +1386,7 @@
     ],
     "attack": 84,
     "description": "고대 신전의 어두운 주술에 얽매여 사막의 뜨거운 바람을 가르며 치명적인 신경독을 주입하는 거대 벌입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_venom_hornet.png"
+    "image": "./image/monster63.jpg"
   },
   {
     "id": 64,
@@ -1405,7 +1405,7 @@
     ],
     "attack": 78,
     "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_crystal_spider.png"
+    "image": "./image/monster64.jpg"
   },
   {
     "id": 65,
@@ -1430,7 +1430,7 @@
     ],
     "attack": 78,
     "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_flame_beetle.png"
+    "image": "./image/monster65.jpg"
   },
   {
     "id": 66,
@@ -1449,7 +1449,7 @@
     ],
     "attack": 88,
     "description": "사막 지하 깊은 곳의 어둠을 품고 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_oasis_crocodile.png"
+    "image": "./image/monster66.jpg"
   },
   {
     "id": 67,
@@ -1474,7 +1474,7 @@
     ],
     "attack": 85,
     "description": "사막 지하 깊은 곳의 어둠을 품고 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_statue_guardian.png"
+    "image": "./image/monster67.jpg"
   },
   {
     "id": 68,
@@ -1493,7 +1493,7 @@
     ],
     "attack": 91,
     "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_statue_guardian.png"
+    "image": "./image/monster68.jpg"
   },
   {
     "id": 69,
@@ -1512,7 +1512,7 @@
     ],
     "attack": 80,
     "description": "고대 신전의 어두운 주술에 얽매여 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_flame_beetle.png"
+    "image": "./image/monster69.jpg"
   },
   {
     "id": 70,
@@ -1531,7 +1531,7 @@
     ],
     "attack": 81,
     "description": "수천 년의 세월을 버텨온 신비한 힘으로 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_sand_lizard.png"
+    "image": "./image/monster70.jpg"
   },
   {
     "id": 71,
@@ -1556,7 +1556,7 @@
     ],
     "attack": 86,
     "description": "사막 지하 깊은 곳의 어둠을 품고 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_sand_golem.png"
+    "image": "./image/monster71.jpg"
   },
   {
     "id": 72,
@@ -1581,7 +1581,7 @@
     ],
     "attack": 77,
     "description": "고대 신전의 어두운 주술에 얽매여 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_sand_lizard.png"
+    "image": "./image/monster72.jpg"
   },
   {
     "id": 73,
@@ -1600,7 +1600,7 @@
     ],
     "attack": 80,
     "description": "수천 년의 세월을 버텨온 신비한 힘으로 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_white_mole.png"
+    "image": "./image/monster73.jpg"
   },
   {
     "id": 74,
@@ -1625,7 +1625,7 @@
     ],
     "attack": 90,
     "description": "사막 지하 깊은 곳의 어둠을 품고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_desert_fox.png"
+    "image": "./image/monster74.jpg"
   },
   {
     "id": 75,
@@ -1650,7 +1650,7 @@
     ],
     "attack": 122,
     "description": "수많은 전투를 거쳐 살아남은 강자로 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv7_sand_viper.png"
+    "image": "./image/monster75.jpg"
   },
   {
     "id": 76,
