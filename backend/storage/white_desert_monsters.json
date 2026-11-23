@@ -914,7 +914,7 @@
     ],
     "attack": 53,
     "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_crystal_spider.png"
+    "image": "./image/monster41.jpg"
   },
   {
     "id": 42,
@@ -933,7 +933,7 @@
     ],
     "attack": 62,
     "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_white_minotaur.png"
+    "image": "./image/monster42.jpg"
   },
   {
     "id": 43,
@@ -952,7 +952,7 @@
     ],
     "attack": 57,
     "description": "몸 주변에 작은 모래 회오리를 두르고 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_dune_wolf.png"
+    "image": "./image/monster43.jpg"
   },
   {
     "id": 44,
@@ -971,7 +971,7 @@
     ],
     "attack": 61,
     "description": "사구의 어둠 속에 몸을 숨긴 채 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_dune_wolf.png"
+    "image": "./image/monster44.jpg"
   },
   {
     "id": 45,
@@ -990,7 +990,7 @@
     ],
     "attack": 53,
     "description": "사구의 어둠 속에 몸을 숨긴 채 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_white_minotaur.png"
+    "image": "./image/monster45.jpg"
   },
   {
     "id": 46,
@@ -1009,7 +1009,7 @@
     ],
     "attack": 61,
     "description": "몸 주변에 작은 모래 회오리를 두르고 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_sand_viper.png"
+    "image": "./image/monster46.jpg"
   },
   {
     "id": 47,
@@ -1028,7 +1028,7 @@
     ],
     "attack": 58,
     "description": "강철보다 단단한 신체 구조를 지니고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_desert_fox.png"
+    "image": "./image/monster47.jpg"
   },
   {
     "id": 48,
@@ -1047,7 +1047,7 @@
     ],
     "attack": 51,
     "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_dune_wolf.png"
+    "image": "./image/monster48.jpg"
   },
   {
     "id": 49,
@@ -1072,7 +1072,7 @@
     ],
     "attack": 61,
     "description": "사구의 어둠 속에 몸을 숨긴 채 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_crystal_spider.png"
+    "image": "./image/monster49.jpg"
   },
   {
     "id": 50,
@@ -1091,7 +1091,7 @@
     ],
     "attack": 55,
     "description": "몸 주변에 작은 모래 회오리를 두르고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_desert_fox.png"
+    "image": "./image/monster50.jpg"
   },
   {
     "id": 51,
@@ -1110,7 +1110,7 @@
     ],
     "attack": 57,
     "description": "사구의 어둠 속에 몸을 숨긴 채 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_oasis_crocodile.png"
+    "image": "./image/monster51.jpg"
   },
   {
     "id": 52,
@@ -1129,7 +1129,7 @@
     ],
     "attack": 59,
     "description": "몸 주변에 작은 모래 회오리를 두르고 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_oasis_crocodile.png"
+    "image": "./image/monster52.jpg"
   },
   {
     "id": 53,
@@ -1154,7 +1154,7 @@
     ],
     "attack": 52,
     "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_sand_lizard.png"
+    "image": "./image/monster53.jpg"
   },
   {
     "id": 54,
@@ -1173,7 +1173,7 @@
     ],
     "attack": 53,
     "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_sand_golem.png"
+    "image": "./image/monster54.jpg"
   },
   {
     "id": 55,
@@ -1192,7 +1192,7 @@
     ],
     "attack": 57,
     "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_sand_viper.png"
+    "image": "./image/monster55.jpg"
   },
   {
     "id": 56,
@@ -1217,7 +1217,7 @@
     ],
     "attack": 58,
     "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_abyss_centipede.png"
+    "image": "./image/monster56.jpg"
   },
   {
     "id": 57,
@@ -1242,7 +1242,7 @@
     ],
     "attack": 54,
     "description": "몸 주변에 작은 모래 회오리를 두르고 여행자에게 헛것을 보여주어 깊은 사막 한가운데로 유인하는 유령입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_mirage_wraith.png"
+    "image": "./image/monster57.jpg"
   },
   {
     "id": 58,
@@ -1261,7 +1261,7 @@
     ],
     "attack": 60,
     "description": "강철보다 단단한 신체 구조를 지니고 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv5_white_mole.png"
+    "image": "./image/monster58.jpg"
   },
   {
     "id": 59,
@@ -1286,7 +1286,7 @@
     ],
     "attack": 91,
     "description": "사막 지하 깊은 곳의 어둠을 품고 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_abyss_centipede.png"
+    "image": "./image/monster59.jpg"
   },
   {
     "id": 60,
@@ -1311,7 +1311,7 @@
     ],
     "attack": 92,
     "description": "수천 년의 세월을 버텨온 신비한 힘으로 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_desert_fox.png"
+    "image": "./image/monster60.jpg"
   },
   {
     "id": 61,
@@ -1336,7 +1336,7 @@
     ],
     "attack": 92,
     "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "https://cdn.whitedesert.game/monsters/lv6_desert_fox.png"
+    "image": "./image/monster61.jpg"
   },
   {
     "id": 62,
