@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하얀사막 - 공지 작성</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="pageTitle">공지사항 작성</h1>
+    </header>
+
+    <main>
+        <form id="noticeForm">
+            <div>
+                <label for="category">카테고리</label><br />
+                <select id="category" name="category">
+                    <option value="일반">일반</option>
+                    <option value="점검">점검</option>
+                    <option value="이벤트">이벤트</option>
+                    <option value="업데이트">업데이트</option>
+                </select>
+            </div>
+            <br />
+
+            <div>
+                <label for="author">작성자</label><br />
+                <input type="text" id="author" name="author" value="관리자" required />
+            </div>
+            <br />
+
+            <div>
+                <label for="title">제목</label><br />
+                <input type="text" id="title" name="title" style="width: 400px;" required />
+            </div>
+            <br />
+
+            <div>
+                <label for="content">내용</label><br />
+                <textarea id="content" name="content" rows="10" cols="60" required></textarea>
+            </div>
+            <br />
+
+            <div>
+                <label>
+                    <input type="checkbox" id="isPinned" name="isPinned" />
+                    상단 고정
+                </label>
+            </div>
+            <br />
+
+            <button type="submit" id="submitBtn">등록하기</button>
+            <a href="./notice.html"><button type="button">취소</button></a>
+        </form>
+    </main>
+
+    <script src="./notice.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const editId = params.get("id");
+
+        const pageTitle = document.getElementById("pageTitle");
+        const submitBtn = document.getElementById("submitBtn");
+        const form = document.getElementById("noticeForm");
+
+        async function initEditMode() {
+            if (!editId) return;
+
+            pageTitle.textContent = "공지사항 수정";
+            submitBtn.textContent = "수정 완료";
+
+            try {
+                const data = await requestNotice(
+                    `${API_BASE}/api/notices/${encodeURIComponent(editId)}?increase_view=false`
+                );
+                document.getElementById("category").value = data.category || "일반";
+                document.getElementById("author").value = data.author || "관리자";
+                document.getElementById("title").value = data.title || "";
+                document.getElementById("content").value = data.content || "";
+                document.getElementById("isPinned").checked = Boolean(data.isPinned);
+            } catch (err) {
+                alert(err.message);
+                location.href = "./notice.html";
+            }
+        }
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const payload = {
+                category: document.getElementById("category").value,
+                author: document.getElementById("author").value.trim() || "관리자",
+                title: document.getElementById("title").value.trim(),
+                content: document.getElementById("content").value.trim(),
+                isPinned: document.getElementById("isPinned").checked,
+            };
+
+            if (!payload.title || !payload.content) {
+                alert("제목과 내용을 입력해 주세요.");
+                return;
+            }
+
+            try {
+                if (editId) {
+                    await requestNotice(`${API_BASE}/api/notices/${encodeURIComponent(editId)}`, {
+                        method: "PATCH",
+                        body: JSON.stringify(payload),
+                    });
+                    alert("수정되었습니다.");
+                    location.href = `./notice-detail.html?id=${encodeURIComponent(editId)}`;
+                } else {
+                    const created = await requestNotice(`${API_BASE}/api/notices`, {
+                        method: "POST",
+                        body: JSON.stringify(payload),
+                    });
+                    alert("등록되었습니다.");
+                    location.href = `./notice-detail.html?id=${encodeURIComponent(created.id)}`;
+                }
+            } catch (err) {
+                alert(err.message);
+            }
+        });
+
+        initEditMode();
+    </script>
+</body>
+
+</html>
