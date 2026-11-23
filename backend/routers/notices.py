@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 
 router = APIRouter(prefix="/api/notices", tags=["notices"])
 
-NOTICES_PATH = Path(__file__).parent / "storage" / "notices.json"
+NOTICES_PATH = Path(__file__).parent.parent / "storage" / "notices.json"
 file_lock = threading.Lock()
 
 
