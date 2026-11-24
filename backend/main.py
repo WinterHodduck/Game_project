@@ -56,6 +56,11 @@ def monsters():
     # 그 요청에 대한 응답을 받아서 클라이언트에 응답을 함.
     # 응답 타입이 리스트이다.. 그리고 그 리스트에는 딕셔너리 타입  > json으로 응답
 
+@a.get("/search")
+def monsters_search(word:str =""):
+    print('monsters_search 진입함')
+    return data.search_Word(word)
+
 ## 클라이언트가 보낸 객체를 파이썬은 객체 구조를 이해 못한다.
 ## BaseModel은  Menu 객체의 변수에 값을 저장할 때. 타입이 맞는지 검사하는 도구
 ## id변수에는 정수, name 문자열 ...
@@ -65,4 +70,11 @@ class Monster(BaseModel):
     level : int
     habitat : str
     image : str
+    hp : int
+    exp : int
+    attack : int
+    description : str
+    drops: str
+      
+
 
