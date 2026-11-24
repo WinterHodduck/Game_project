@@ -1,5 +1,5 @@
 import json
-from fastapi import APIRouter,Query
+from fastapi import APIRouter,Query,HTTPException
 from pathlib import Path
 from datetime import datetime
 from pydantic import BaseModel, Field
@@ -98,3 +98,15 @@ def create_post(body: PostCreate):  # FastAPI가 요청 본문을 PostCreate 규
     posts.append(new_post)      # 기존 메모리 속 리스트에 새로 만든 딕셔너리를 추가함
     save_posts(posts)       # 새로 만든 딕셔너리가 추가된 리스트를 저장함
     return new_post     # 위의 딕셔너리를 호출한 곳으로 반환함 
+
+
+@router.delete("/{post_id}")
+def delete_post(post_id:int):
+    posts = get_posts()
+    for post in posts:
+        if post["id"] == post_id:
+            posts.remove(post)
+            save_posts(posts)
+            return{"message":"게시글이 삭제되었습니다","id":post_id}
+        
+    raise HTTPException(status_code=404, detail="게시글을 찾을 수 없습니다")

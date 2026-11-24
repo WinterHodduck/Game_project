@@ -37,7 +37,7 @@ function renderPosts(items, total, page) {
     <td>${escapeHtml(p.author)}</td>
     <td>${p.createdAt.slice(0, 10)}</td>
     <td>${p.views}</td>
-    <td><button>삭제</button></td>
+    <td><button onclick="deletePost(${p.id})">삭제</button></td>
   </tr>
 `,
     )
