@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하얀사막 - 전체 게시글 보기</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <h2>게시글 전체 보기</h2>
+
+      <table class="post-table">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>조회</th>
+          </tr>
+        </thead>
+        <tbody id="postList"></tbody>
+      </table>
+
+      <div id="pageNumber"></div>
+      <a href="writePost.html" class="writeBtn"><button>글쓰기</button></a>
+    </main>
+    <script src="include.js"></script>
+    <script src="allPost.js"></script>
+  </body>
+</html>
