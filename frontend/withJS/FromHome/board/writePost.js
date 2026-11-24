@@ -14,8 +14,9 @@ postForm.addEventListener("submit", async (e) => {
   const body = {
     // body 변수에 객체를 저장. 해당 객체는 총 3개의 key로 구성되어 있음.
     // 각각의 키는 클라이언트가 "작성자, 제목, 내용" 입력칸에 입력한 내용을 앞뒤 공백 제거한 형태의 값을 가짐
-    author: document.getElementById("author").value.trim(),
+    category: document.getElementById("category").value.trim(),
     title: document.getElementById("title").value.trim(),
+    author: document.getElementById("author").value.trim(),
     content: document.getElementById("content").value.trim(),
   };
 

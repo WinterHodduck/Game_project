@@ -14,12 +14,22 @@
         주소 뒤에 ? 변수=값 형태로 보낸다. 
         이 요청에 대해 서버가 응답한 새 페이지로 브라우저가 화면 전체를 이동, 즉 새로고침한다-->
         <div>
-          <label for="author">작성자</label>
-          <input type="text" id="author" maxlength="20" required />
+          <label for="category">카테고리</label>
+          <select id="category">
+            <option value="팁 & 노하우">팁 & 노하우</option>
+            <option value="팬 아트">팬 아트</option>
+            <option value="자유 게시판">자유 게시판</option>
+            <option value="모집 & 홍보">모집 & 홍보</option>
+            <option value="스크린샷 & 영상">스크린샷 & 영상</option>
+          </select>
         </div>
         <div>
           <label for="title">제목</label>
           <input type="text" id="title" maxlength="100" required />
+        </div>
+        <div>
+          <label for="author">작성자</label>
+          <input type="text" id="author" maxlength="20" required />
         </div>
         <div>
           <label for="content">내용</label>
