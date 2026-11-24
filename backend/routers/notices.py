@@ -55,6 +55,8 @@ def save_notices(notices: list[dict]) -> None:
     os.replace(tmp_path, NOTICES_PATH)
 
 
+
+
 def sort_notices(notices: list[dict]) -> list[dict]:
     return sorted(
         notices,
@@ -120,6 +122,7 @@ def list_notices(
 
 @router.get("/{notice_id}")
 def get_notice(notice_id: str, increase_view: bool = True):
+    # print(f"Fetching notice with ID: {notice_id}, increase_view={increase_view}")
     with file_lock:
         notices = load_notices()
         for item in notices:
@@ -128,7 +131,7 @@ def get_notice(notice_id: str, increase_view: bool = True):
                     item["views"] = int(item.get("views", 0)) + 1
                     save_notices(notices)
                 return item
-
+                
     raise HTTPException(status_code=404, detail="공지사항을 찾을 수 없습니다.")
 
 
