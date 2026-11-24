@@ -100,13 +100,16 @@ def create_post(body: PostCreate):  # FastAPI가 요청 본문을 PostCreate 규
     return new_post     # 위의 딕셔너리를 호출한 곳으로 반환함 
 
 
-@router.delete("/{post_id}")
-def delete_post(post_id:int):
-    posts = get_posts()
-    for post in posts:
-        if post["id"] == post_id:
-            posts.remove(post)
-            save_posts(posts)
-            return{"message":"게시글이 삭제되었습니다","id":post_id}
+@router.delete("/{post_id}")        # DELETE/api/posts/(빈칸)이라는 주소의 요청을 받으면 응답할 코드를 아래에 서술 
+def delete_post(post_id:int):       # 빈칸값은 기본적으로 문자열. 요청 주소에서 받은 빈칸 post_id를 매개변수로 받고 정수형으로 변환해서 넘겨줌
+    posts = get_posts()             # posts 변수에 파이썬 리스트 저장   
+    for post in posts:              # posts의 리스트 내의 딕셔너리 하나하나를 변수 post에 넣고 
+        if post["id"] == post_id:   # 만약 id라는 키의 값이 post_id의 값과 같다면
+            posts.remove(post)      # 파이썬 리스트에서 해당 딕셔너리 제거
+            save_posts(posts)       # 해당 딕셔너리가 제거된 리스트를 파일에 저장
+            return{"message":"게시글이 삭제되었습니다","id":post_id}    # FastAPI 프레임워크에게 딕셔너리 반환
         
-    raise HTTPException(status_code=404, detail="게시글을 찾을 수 없습니다")
+    raise HTTPException(status_code=404, detail="게시글을 찾을 수 없습니다")    # raise는 파이썬에서 강제로 에러를 발생시키는 키워드
+                                                                            # 반복문을 끝까지 돌았음에도,return을 만나지 못하면 도달
+                                                                            # 상태 코드 404와 문자열을 저장한 detail을 담은 HTTPException 객체를 raise가 던짐
+                                                                            # 그걸 FastAPI가 가로채서 상태 코드와 본문을 담은 응답으로 js에 보냄
