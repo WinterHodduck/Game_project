@@ -27,6 +27,10 @@ class Monster(BaseModel):
 def get_all_monsters():
     return data.get_all()
 
+@router.get("/search")
+def monsters_search(word:str =""):
+    print('monsters_search 진입함')
+    return data.search_Word(word)
 
 
 def mount_monster_images(app):
