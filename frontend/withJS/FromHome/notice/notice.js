@@ -53,7 +53,7 @@ async function loadNoticeList(targetPage = state.page) {
         }
 
         const data = await res.json();
-        console.log("공지사항 데이터:", data);
+        // console.log("공지사항 데이터:", data);
         const items = Array.isArray(data) ? data : (data.items ?? []);
         state.total = data.total ?? items.length;
         state.page = data.page ?? state.page;

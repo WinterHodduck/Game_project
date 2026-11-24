@@ -28,6 +28,7 @@
     <script>
         const params = new URLSearchParams(window.location.search);
         const noticeId = params.get("id");
+        // console.log(`noticeId: ${noticeId}`); // 디버깅용 로그
         const container = document.getElementById("detailContainer");
         const editBtn = document.getElementById("editBtn");
         const deleteBtn = document.getElementById("deleteBtn");
@@ -39,7 +40,7 @@
             }
 
             try {
-                const notice = await requestNotice(`${API_BASE}/api/notices/${encodeURIComponent(noticeId)}`);
+                const notice = await requestNotice(`${API_BASE}/api/notices/${noticeId}`);
                 const pinText = notice.isPinned ? "[상단고정] " : "";
                 const updatedText = notice.updatedAt ? ` | 수정일: ${formatDate(notice.updatedAt)}` : "";
 
