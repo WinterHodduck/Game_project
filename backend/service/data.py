@@ -23,3 +23,15 @@ next_id = max((obj["id"] for obj in monsters),default=0)+1
 
 def get_all():
     return monsters
+
+# 검색기능
+def search_Word(word):
+    result = [];
+    q = str(word).strip()
+    for m in monsters:
+        name = str(m.get("name", ""))
+        level = str(m.get("level", ""))
+        habitat = str(m.get("habitat", ""))
+        if q in name or q in level or q in habitat:
+            result.append(m)
+    return result 

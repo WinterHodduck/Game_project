@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자페이지 - 몬스터 등록</title>
+    <link rel="stylesheet" href="../css/desert-theme.css" />
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <script src="../js/data_api.js"></script>
+    <script>
+        // 4. 등록 화면 (헬퍼 함수 없이 직접 createElement로 작성)
+        function renderAdd() {
+
+
+            // --- 이름 입력 그룹 ---
+            const nameGroup = document.createElement("div");
+            nameGroup.className = "form-group";
+
+            const nameLabel = document.createElement("label");
+            nameLabel.textContent = "이름";
+            nameLabel.setAttribute("for", "add-name");
+
+            const nameInput = document.createElement("input");
+            nameInput.type = "text";
+            nameInput.id = "add-name";
+            nameInput.required = true;
+
+            nameGroup.appendChild(nameLabel);
+            nameGroup.appendChild(nameInput);
+
+
+            // --- 나이 입력 그룹 ---
+            const ageGroup = document.createElement("div");
+            ageGroup.className = "form-group";
+
+            const ageLabel = document.createElement("label");
+            ageLabel.textContent = "나이";
+            ageLabel.setAttribute("for", "add-age");
+
+            const ageInput = document.createElement("input");
+            ageInput.type = "number";
+            ageInput.id = "add-age";
+            ageInput.required = true;
+
+            ageGroup.appendChild(ageLabel);
+            ageGroup.appendChild(ageInput);
+
+            // --- 국적 입력 그룹 (textarea) ---
+            const natGroup = document.createElement("div");
+            natGroup.className = "form-group";
+
+            const natLabel = document.createElement("label");
+            natLabel.textContent = "국적";
+            natLabel.setAttribute("for", "add-nationality");
+
+            const natInput = document.createElement("input");
+            natInput.type = "text";
+            natInput.id = "add-nat";
+            natInput.required = true;
+
+            natGroup.appendChild(natLabel);
+            natGroup.appendChild(natInput);
+
+            // --- 포지션 입력 그룹 (textarea) ---
+            const posGroup = document.createElement("div");
+            posGroup.className = "form-group";
+
+            const posLabel = document.createElement("label");
+            posLabel.textContent = "포지션";
+            posLabel.setAttribute("for", "add-position");
+
+            const posInput = document.createElement("input");
+            posInput.type = "text";
+            posInput.id = "add-pos";
+            posInput.required = true;
+
+            posGroup.appendChild(posLabel);
+            posGroup.appendChild(posInput);
+
+            // --- 소속사(agency) 입력 그룹 (textarea) ---
+            const agencyGroup = document.createElement("div");
+            agencyGroup.className = "form-group";
+
+            const agencyLabel = document.createElement("label");
+            agencyLabel.textContent = "소속사";
+            agencyLabel.setAttribute("for", "add-agency");
+
+            const agencyInput = document.createElement("input");
+            agencyInput.type = "text";
+            agencyInput.id = "add-agen";
+            agencyInput.required = true;
+
+            agencyGroup.appendChild(agencyLabel);
+            agencyGroup.appendChild(agencyInput);
+
+
+            // --- 투표수(votes) 입력 그룹 (textarea) ---
+            const votesGroup = document.createElement("div");
+            votesGroup.className = "form-group";
+
+            const votesLabel = document.createElement("label");
+            votesLabel.textContent = "득표수";
+            votesLabel.setAttribute("for", "add-votes");
+
+            const votesInput = document.createElement("input");
+            votesInput.type = "number";
+            votesInput.id = "add-vot";
+            votesInput.required = true;
+
+            votesGroup.appendChild(votesLabel);
+            votesGroup.appendChild(votesInput);
+
+
+            // --- 심사위원 점수(judge_score) 입력 그룹 (textarea) ---
+            const scoreGroup = document.createElement("div");
+            scoreGroup.className = "form-group";
+
+            const scoreLabel = document.createElement("label");
+            scoreLabel.textContent = "심사위원 점수";
+            scoreLabel.setAttribute("for", "add-judge_score");
+
+            const scoreInput = document.createElement("input");
+            scoreInput.type = "number";
+            scoreInput.id = "add-score";
+            scoreInput.required = true;
+
+            scoreGroup.appendChild(scoreLabel);
+            scoreGroup.appendChild(scoreInput);
+
+            // --- 설명 입력 그룹 (textarea) ---
+            const descGroup = document.createElement("div");
+            descGroup.className = "form-group";
+
+            const descLabel = document.createElement("label");
+            descLabel.textContent = "짧은 소개";
+            descLabel.setAttribute("for", "add-description");
+
+            const descTextarea = document.createElement("textarea");
+            descTextarea.id = "add-description";
+            descTextarea.rows = 3;
+            descTextarea.required = true;
+
+            descGroup.appendChild(descLabel);
+            descGroup.appendChild(descTextarea);
+
+            // --- 이미지 첨부 그룹 (이름 그룹 다음, 드래그 앤 드롭 지원) ---
+            const imageGroup = document.createElement("div");
+            imageGroup.className = "form-group";
+
+            const imageLabel = document.createElement("label");
+            imageLabel.textContent = "프로필 사진 (마우스 드래그 또는 파일 선택)";
+            imageLabel.setAttribute("for", "add-image");
+
+            // 드래그 앤 드롭 영역 스타일링 및 박스 생성
+            const dropZone = document.createElement("div");
+            dropZone.style.border = "2px dashed rgba(192, 132, 252, 0.5)";
+            dropZone.style.borderRadius = "8px";
+            dropZone.style.padding = "20px";
+            dropZone.style.textAlign = "center";
+            dropZone.style.backgroundColor = "rgba(26, 16, 60, 0.4)";
+            dropZone.style.color = "#cbd5e1";
+            dropZone.style.cursor = "pointer";
+            dropZone.textContent = "이미지 파일을 여기에 마우스로 드래그하여 놓으세요 (또는 클릭하여 선택)";
+
+            const imageInput = document.createElement("input");
+            imageInput.type = "file";
+            imageInput.id = "add-image";
+            imageInput.accept = "image/*";
+            imageInput.required = true;
+            imageInput.style.display = "none"; // 기본 파일 input은 숨기고 드래그존과 연동
+
+            // 드래그 앤 드롭 이벤트 처리
+            dropZone.addEventListener("click", () => imageInput.click());
+
+            dropZone.addEventListener("dragover", (e) => {
+                e.preventDefault();
+                dropZone.style.borderColor = "#c084fc";
+                dropZone.style.backgroundColor = "rgba(147, 51, 234, 0.2)";
+            });
+
+            dropZone.addEventListener("dragleave", (e) => {
+                e.preventDefault();
+                dropZone.style.borderColor = "rgba(192, 132, 252, 0.5)";
+                dropZone.style.backgroundColor = "rgba(26, 16, 60, 0.4)";
+            });
+
+            dropZone.addEventListener("drop", (e) => {
+                e.preventDefault();
+                dropZone.style.borderColor = "rgba(192, 132, 252, 0.5)";
+                dropZone.style.backgroundColor = "rgba(26, 16, 60, 0.4)";
+
+                if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+                    imageInput.files = e.dataTransfer.files;
+                    dropZone.textContent = `선택된 파일: ${e.dataTransfer.files[0].name}`;
+                }
+            });
+
+            imageInput.addEventListener("change", (e) => {
+                if (e.target.files && e.target.files.length > 0) {
+                    dropZone.textContent = `선택된 파일: ${e.target.files[0].name}`;
+                }
+            });
+
+            imageGroup.appendChild(imageLabel);
+            imageGroup.appendChild(dropZone);
+            imageGroup.appendChild(imageInput);
+
+
+
+
+            // --- 제출 버튼 ---
+            const submitBtn = document.createElement("button");
+            submitBtn.type = "button";
+            //  submitBtn.type = "submit";
+            submitBtn.onclick = handleAddMenu;   // 버튼이 클릭되면 이 함수를 콜해라..
+            submitBtn.textContent = "등록하기";
+
+            // 폼에 요소들 조립
+            form.appendChild(nameGroup);
+            form.appendChild(imageGroup);
+            form.appendChild(ageGroup);
+            form.appendChild(natGroup);
+            form.appendChild(posGroup);
+            form.appendChild(agencyGroup);
+            form.appendChild(votesGroup);
+            form.appendChild(scoreGroup);
+            form.appendChild(descGroup);
+            form.appendChild(submitBtn);
+
+
+
+            // 우측 컨텐츠 영역에 폼 추가
+            targetArea.appendChild(form);
+        }
+
+        // 등록 처리
+        async function handleAddMenu(e) {
+            e.preventDefault();
+
+            const name = document.getElementById("add-name").value;
+            const imageFile = document.getElementById("add-image").files[0];
+            const age = Number(document.getElementById("add-age").value);
+            const nationality = document.getElementById("add-nat").value;
+            const position = document.getElementById("add-pos").value;
+            const agency = document.getElementById("add-agen").value;
+            const votes = Number(document.getElementById("add-vot").value);
+            const judge_score = Number(document.getElementById("add-score").value);
+            const description = document.getElementById("add-description").value;
+            const id = 0;
+
+            let imagePath = "";
+
+            // 1. 이미지가 선택된 경우 서버에 파일 업로드 요청
+            if (imageFile) {
+                const formData = new FormData();
+                formData.append("file", imageFile);
+
+                try {
+                    const uploadRes = await fetch("http://127.0.0.1:8000/upload-image", {
+                        method: "POST",
+                        body: formData // 파일 전송 시에는 Content-Type 헤더를 넣지 않아야 브라우저가 자동 설정합니다.
+                    });
+
+                    if (!uploadRes.ok) throw new Error("이미지 업로드 실패");
+                    const uploadData = await uploadRes.json();
+                    imagePath = uploadData.image_url; // 서버가 돌려준 이미지 경로
+                } catch (error) {
+                    console.error(error);
+                    alert("이미지 업로드 중 오류가 발생했습니다.");
+                    return;
+                }
+            } else {
+                imagePath = "/image/default.png"; // 기본 이미지 처리
+            }
+
+
+
+            //새로 등록된 메뉴의 정보를 객체로 만들어서 서버에게 전송할 예정..
+            const send_data = {
+                id,
+                name,
+                image: imagePath,
+                age,
+                nationality,
+                position,
+                agency,
+                votes,
+                judge_score,
+                description
+            }
+
+            await addInf(send_data);
+            renderAll();
+        }
+
+
+    </script>
+</body>
+
+</html>
