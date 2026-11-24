@@ -1,24 +1,36 @@
-from fastapi import APIRouter, HTTPException
+import json
+import random
+from pathlib import Path
+
+from fastapi import APIRouter
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
+
 from service import data
 
 router = APIRouter(prefix="/monsters", tags=["monsters"])
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_PATH = BASE_DIR / "storage" / "white_desert_monsters.json"
+IMAGE_DIR = BASE_DIR / "storage" / "image"
 
-@router.get("")
-def get_monsters():
+
+class Monster(BaseModel):
+    id: int
+    name: str
+    level: int
+    habitat: str
+    image: str
+
+
+@router.get("/")
+def get_all_monsters():
     return data.get_all()
 
 
-@router.get("/search")
-def search_monsters(word: str = ""):
-    if not word.strip():
-        return data.get_all()
-    return data.search_Word(word)
 
+def mount_monster_images(app):
+    if IMAGE_DIR.exists():
+        app.mount("/image", StaticFiles(directory=str(IMAGE_DIR)), name="image")
 
-@router.get("/{mob_id}")
-def get_monster(mob_id: int):
-    for m in data.get_all():
-        if m.get("id") == mob_id:
-            return m
-    raise HTTPException(status_code=404, detail="몬스터를 찾을 수 없습니다.")
+ #Read / Update / Delete 구현예정
