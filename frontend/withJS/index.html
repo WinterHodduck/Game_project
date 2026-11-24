@@ -2,38 +2,6 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>하얀사막 - 메인화면</title>
-</head>
-
-<body>
-  <header>
-    <h1>하얀사막</h1>
-    <h3>White Dessert</h3>
-    <nav>
-      <ul>
-        <li><a href="./FromHome/monster/monster.html">몬스터 도감</a></li>
-        <li><a href="./FromHome/board/board.html">커뮤니티</a></li>
-        <li><a href="./FromHome/notice/notice.html">공지사항</a></li>
-      </ul>
-    </nav>
-  </header>
-  <aside>
-    <form id="loginForm">
-      <h2>로그인</h2>
-      <input type="text" placeholder="아이디" />
-      <input type="password" placeholder="비밀번호" />
-      <label><input type="checkbox" />아이디 저장하기</label>
-      <input type="submit" value="Login" />
-    </form>
-  </aside>
-</body>
-
-</html>
-
-
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>하얀 사막</title>
@@ -90,8 +58,13 @@
       padding: 8px 16px 28px;
     }
 
-    nav button {
+    nav button,
+    nav a.nav-link {
       appearance: none;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       border: 1px solid rgba(77, 163, 224, 0.45);
       background: rgba(255, 255, 255, 0.82);
       backdrop-filter: blur(6px);
@@ -105,7 +78,8 @@
       transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
     }
 
-    nav button:hover {
+    nav button:hover,
+    nav a.nav-link:hover {
       transform: translateY(-2px);
       background: #ffffff;
       border-color: var(--sand-gold);
@@ -113,12 +87,126 @@
       box-shadow: 0 7px 16px rgba(217, 164, 65, 0.22);
     }
 
-    nav button.active {
+    nav button.active,
+    nav a.nav-link.active {
       background: linear-gradient(135deg, #4da3e0 0%, #7ec4f2 55%, #e8be68 100%);
       color: #ffffff;
       border-color: transparent;
       box-shadow: 0 6px 18px rgba(77, 163, 224, 0.35);
       text-shadow: 0 1px 2px rgba(20, 50, 80, 0.25);
+    }
+
+    /* 우측 상단 RPG 스타일 로그인 창 */
+    .rpg-login-box {
+      position: fixed;
+      top: 18px;
+      right: 22px;
+      z-index: 100;
+      width: 248px;
+      padding: 14px 16px 15px;
+      border-radius: 16px;
+      background: linear-gradient(165deg, rgba(255, 253, 248, 0.94) 0%, rgba(245, 230, 196, 0.92) 100%);
+      border: 1.5px solid rgba(217, 164, 65, 0.65);
+      box-shadow:
+        0 10px 24px rgba(31, 78, 120, 0.16),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+    }
+
+    .rpg-login-box h2 {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #1f4e78;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(217, 164, 65, 0.35);
+      padding-bottom: 6px;
+    }
+
+    .rpg-login-box h2::after {
+      content: "GUILD ACCESS";
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--sand-amber);
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(217, 164, 65, 0.45);
+      padding: 2px 6px;
+      border-radius: 999px;
+    }
+
+    .rpg-login-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .rpg-login-box input[type="text"],
+    .rpg-login-box input[type="password"] {
+      width: 100%;
+      padding: 8px 11px;
+      border-radius: 10px;
+      border: 1px solid rgba(77, 163, 224, 0.45);
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--ink-dark);
+      font-size: 0.86rem;
+      outline: none;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .rpg-login-box input[type="text"]:focus,
+    .rpg-login-box input[type="password"]:focus {
+      border-color: var(--sand-gold);
+      box-shadow: 0 0 0 3px rgba(217, 164, 65, 0.22);
+    }
+
+    .rpg-login-box label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--ink-muted);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .rpg-login-box input[type="checkbox"] {
+      accent-color: var(--sand-amber);
+      cursor: pointer;
+    }
+
+    .rpg-login-box input[type="submit"] {
+      margin-top: 2px;
+      width: 100%;
+      padding: 9px 12px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      background: linear-gradient(135deg, #3b93d4 0%, #6cb9ee 52%, #dfa944 100%);
+      box-shadow: 0 5px 14px rgba(59, 147, 212, 0.32);
+      transition: transform 0.16s ease, box-shadow 0.16s ease, filter 0.16s ease;
+    }
+
+    .rpg-login-box input[type="submit"]:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.04);
+      box-shadow: 0 7px 18px rgba(217, 164, 65, 0.36);
+    }
+
+    @media (max-width: 960px) {
+      .rpg-login-box {
+        position: static;
+        width: min(340px, calc(100% - 32px));
+        margin: 0 auto 18px;
+      }
     }
 
     #content {
@@ -199,9 +287,20 @@
       margin-right: 4px;
     }
   </style>
+  <link rel="stylesheet" href="./css/desert-theme.css" />
 </head>
 
 <body>
+
+  <aside class="rpg-login-box">
+    <form id="loginForm">
+      <h2>로그인</h2>
+      <input type="text" placeholder="아이디" />
+      <input type="password" placeholder="비밀번호" />
+      <label><input type="checkbox" />아이디 저장하기</label>
+      <input type="submit" value="Login" />
+    </form>
+  </aside>
 
   <h1>하얀 사막에 오신 여러분들을 환영합니다.</h1>
   <nav>
@@ -210,6 +309,8 @@
     </button>
     <button id="nav-all" onclick="renderAllMob()">몬스터 도감</button>
     <button id="nav-manage" onclick="renderManager()">관리자 페이지</button>
+    <a class="nav-link" href="./FromHome/board/board.html">커뮤니티</a>
+    <a class="nav-link" href="./FromHome/notice/notice.html">공지사항</a>
   </nav>
 
   <div id="content"></div>

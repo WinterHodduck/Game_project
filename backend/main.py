@@ -13,10 +13,10 @@ from fastapi.staticfiles import StaticFiles
 
 
 a = FastAPI()
-
+whitelist=["*","주소1","주소2"]
 
 a.add_middleware(
-    CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"]
+    CORSMiddleware, allow_origins=whitelist, allow_methods=["*"], allow_headers=["*"]
 )
 
 a.include_router(notices_router)

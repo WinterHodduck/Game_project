@@ -1,0 +1,90 @@
+:root {
+  --sky-light: #e8f6ff;
+  --sky-mid: #cbeaff;
+  --sky-deep: #4da3e0;
+  --sand-white: #fcfaf5;
+  --sand-warm: #f5e6c4;
+  --sand-gold: #d9a441;
+  --sand-amber: #b87d24;
+  --ink-dark: #2c353d;
+  --ink-muted: #5f6c78;
+  --card-border: rgba(217, 164, 65, 0.35);
+  --shadow-soft: 0 10px 26px rgba(45, 95, 135, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family:
+    "Pretendard",
+    "Malgun Gothic",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  color: var(--ink-dark);
+  background:
+    radial-gradient(
+      circle at 82% 10%,
+      rgba(255, 250, 224, 0.95) 0%,
+      rgba(255, 250, 224, 0) 28%
+    ),
+    linear-gradient(
+      180deg,
+      #b9e2ff 0%,
+      var(--sky-light) 34%,
+      var(--sand-white) 62%,
+      var(--sand-warm) 100%
+    );
+  padding-bottom: 64px;
+}
+
+h1 {
+  margin: 0;
+  padding: 36px 20px 18px;
+  text-align: center;
+  font-size: clamp(1.65rem, 3.2vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1f4e78;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9);
+}
+
+.page-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-bar {
+  margin: 8px 0 22px;
+  padding: 12px 18px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #5d4012;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 252, 245, 0.92) 0%,
+    rgba(245, 230, 196, 0.78) 65%,
+    rgba(203, 234, 255, 0.55) 100%
+  );
+  border-left: 5px solid var(--sand-gold);
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 4px 14px rgba(184, 125, 36, 0.08);
+}
+
+.panel-card {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--sand-white) 72%,
+    #faeed4 100%
+  );
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow-soft);
+}
