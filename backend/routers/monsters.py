@@ -1,18 +1,36 @@
 import json
 import random
 from pathlib import Path
+
 from fastapi import APIRouter
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
 
-router = APIRouter(prefix="/api/monsters", tags=["monsters"])
+from service import data
 
-DATA_PATH = Path(__file__).parent.parent / "storage" / "white_desert_monsters.json"
+router = APIRouter(prefix="/monsters", tags=["monsters"])
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_PATH = BASE_DIR / "storage" / "white_desert_monsters.json"
+IMAGE_DIR = BASE_DIR / "storage" / "image"
 
 
-def load_monsters():
-    with open(DATA_PATH, encoding="utf-8") as f:
-        return json.load(f)
+class Monster(BaseModel):
+    id: int
+    name: str
+    level: int
+    habitat: str
+    image: str
 
 
-@router.get("/random")
-def random_monsters():
-    return random.sample(load_monsters(), k=3)
+@router.get("/")
+def get_all_monsters():
+    return data.get_all()
+
+
+
+def mount_monster_images(app):
+    if IMAGE_DIR.exists():
+        app.mount("/image", StaticFiles(directory=str(IMAGE_DIR)), name="image")
+
+ #Read / Update / Delete 구현예정
