@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시글 수정</title>
+    <link rel="stylesheet" href="../../css/desert-theme.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <h2>게시글 수정</h2>
+      <form id="editForm">
+        <div>
+          <label for="category">카테고리</label>
+          <select id="category">
+            <option value="팁 & 노하우">팁 & 노하우</option>
+            <option value="팬 아트">팬 아트</option>
+            <option value="자유 게시판">자유 게시판</option>
+            <option value="모집 & 홍보">모집 & 홍보</option>
+            <option value="스크린샷 & 영상">스크린샷 & 영상</option>
+          </select>
+        </div>
+        <div>
+          <label for="title">제목</label>
+          <input type="text" id="title" maxlength="100" required />
+        </div>
+        <div>
+          <label for="content">내용</label>
+          <textarea id="content" rows="10" required></textarea>
+        </div>
+        <button type="submit">저장</button>
+        <button type="button" onclick="history.back()">취소</button>
+      </form>
+    </main>
+    <script src="include.js"></script>
+    <script src="editPost.js"></script>
+  </body>
+</html>
