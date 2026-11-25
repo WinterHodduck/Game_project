@@ -96,6 +96,26 @@
       text-shadow: 0 1px 2px rgba(20, 50, 80, 0.25);
     }
 
+    /* 우측 맨 하단 고정 관리자 페이지 버튼 */
+    nav button#nav-manage {
+      position: fixed;
+      bottom: 20px;
+      right: 22px;
+      z-index: 100;
+      background: linear-gradient(135deg, rgba(255, 253, 248, 0.95) 0%, rgba(245, 230, 196, 0.95) 100%);
+      border: 1.5px solid rgba(217, 164, 65, 0.65);
+      color: #1f4e78;
+      box-shadow: 0 8px 20px rgba(31, 78, 120, 0.18);
+    }
+
+    nav button#nav-manage:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #3b93d4 0%, #6cb9ee 55%, #dfa944 100%);
+      border-color: transparent;
+      color: #ffffff;
+      box-shadow: 0 10px 24px rgba(59, 147, 212, 0.32);
+    }
+
     /* 우측 상단 RPG 스타일 로그인 창 */
     .rpg-login-box {
       position: fixed;
@@ -579,6 +599,7 @@
     <button id="nav-manage" onclick="location.href='./admin/admin_create.html'">관리자 페이지</button>
     <a class="nav-link" href="./FromHome/board/board.html">커뮤니티</a>
     <a class="nav-link" href="./FromHome/notice/notice.html">공지사항</a>
+    <a class="nav-link" href="./FromHome/propage/pro.html">주인공 캐릭터</a>
   </nav>
 
   <div id="content"></div>
@@ -597,7 +618,11 @@
     // 돔(DOM) 제어 코드 작성..
 
     const contentDiv = document.getElementById("content");
-    renderHome();
+    if (location.hash === "#mobs") {
+      renderAllMobs();
+    } else {
+      renderHome();
+    }
 
     // 네비게이션 버튼 활성화 표시
     function updateNav(activeId) {
@@ -743,8 +768,6 @@
         closeImageModal();
       }
     }
-
-
 
 
   </script>
