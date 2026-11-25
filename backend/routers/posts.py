@@ -77,7 +77,7 @@ def save_posts(posts):  # 서버 내부 함수이므로 서버 코드(create_pos
 # POST /api/posts 요청을 처리하는 핸들러
 @router.post("",status_code=201)    # POST /api/posts의 주소로 오는 요청에 대해서, 
                                     # 성공하면 상태 코드 201로 응답 
-def create_post(body: PostCreate):  # FastAPI가 요청 본문을 PostCreate 규칙으로 검증하고
+def create_post(body: PostCreate):  # FastAPI가 요청 본문을 PostCreate 클래스인지 검증하고
     # PostCreate 인스턴스로 변환해서, body에 넣어줌. body.title 처럼 . 점표기법을 통해 접근한다. 
     # 만약 검증에 실패할 경우, 이 함수는 실행되지 않고 422로 응답 
     posts = get_posts() # get_posts() 함수를 통해 불러온 파이썬 리스트를 posts에 저장
@@ -111,5 +111,43 @@ def delete_post(post_id:int):       # 빈칸값은 기본적으로 문자열. �
         
     raise HTTPException(status_code=404, detail="게시글을 찾을 수 없습니다")    # raise는 파이썬에서 강제로 에러를 발생시키는 키워드
                                                                             # 반복문을 끝까지 돌았음에도,return을 만나지 못하면 도달
-                                                                            # 상태 코드 404와 문자열을 저장한 detail을 담은 HTTPException 객체를 raise가 던짐
+                                                                            # 상태 코드 404와 detail 키를 담은 HTTPException 객체를 raise가 던짐
                                                                             # 그걸 FastAPI가 가로채서 상태 코드와 본문을 담은 응답으로 js에 보냄
+# 수정 요청으로 받을 데이터의 형태와 검증 규칙                                      
+class PostUpdate(BaseModel):    # PostUpdate 라는 새로운 클래스 생성, BaseModel을 상속받는다 
+    category : str              # category 클래스 속성의 자료형은 문자열로 제한한다
+    title : str = Field(min_length=1, max_length=100)   
+    # title 클래스 속성은 문자열로 제한 및  최소 길이 1, 최대 길이 100으로 제한
+    content : str = Field(min_length=1)   
+    # content 클래스 속성은 문자열로 제한 및 최소 길이 1로 제한
+
+# 수정 화면에서 기존 게시글의 내용을 채우기 위해 글 하나를 가져오는 요청
+@router.get("/{post_id}")       # GET/api/posts/(어떤값) 형태의 요청이 오면 응답하겠다
+def get_post(post_id:int):      # 요청 주소에서 받은 특정값의 자료형을 정수로 변환해서 넘김
+    for post in get_posts():        # get_posts 함수를 통해 얻은 리스트의 요소 하나를 post에 놓고
+        if post["id"] == post_id:   # 만약에 post의 id값이 위에서 받은 post_id의 값과 일치한다면
+            return post             # post를 반환
+    
+    raise HTTPException(status_code=404, detail="게시글을 찾을 수 없습니다")
+    # 반복문을 끝까지 다 돌았음에도 불구하고 return을 만나지 못한다면 raise가 HTTPException 객체를 예외로 던짐
+    # 이것을 FastAPI가 가로채어 응답으로 자바스크립트에 전해줌
+    # 해당 응답안에는 상태 코드가 붙고 detail 키를 가진 본문 객체가 있음
+    
+    
+# 사용자가 수정한 값을 저장하기 위한 요청
+@router.put("/{post_id}")   # PUT/api/posts/(빈칸) 형태의 요청이 오면 응답하겠다
+def update_post(post_id:int, body:PostUpdate):  # 요청 주소에서 받은 값의 자료형은 정수, 
+    # 요청 본문은 PostUpdate의 규칙에 맞는지 검증하고 인스턴트로 변환, 이후 body에 넣어줌
+    posts = get_posts() # 변수 posts에 파이썬 리스트 저장
+    for post in posts:  # 해당 리스트의 요소 하나하나를 변수 post 에 놓고
+        if post["id"] == post_id:   # 만약 post의 id값이 post_id와 같다면 아래의 코드를 실행
+            post["category"] = body.category    # post에 저장된 딕셔너리의 category 값을 body의 category 값으로 설정
+            post["title"] = body.title      # 위와 동일하게 post의 title값을 body의 title값으로 설정
+            post["content"] = body.content  # 마찬가지... 
+            save_posts(posts)   # 딕셔너리의 정보를 수정한 메모리 상의 리스트를 posts.json에 저장(덮어쓰기)
+            return post     # FastAPI에게 해당 딕셔너리를 전달, 그럼 FastAPI가 딕셔너리를 JSON으로 바꿔서
+                            # 200 상태코드와 함께 JS에 응답함
+    raise HTTPException(status_code=404, detail="게시글을 찾을 수 없습니다")
+    # 반복문이 끝날때까지 return을 만나지 못할 경우, HTTPException 객체를 raise가 예외로 던짐
+    # 이를 FastAPI 프레임워크가 응답으로 자바스크립트에 보냄
+    # 자바스크립트는 해당 응답으로 상태코드와 detail 키 안에 저장된 문자열 정보를 받아들임
