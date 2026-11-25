@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주인공 캐릭터 - 하얀 사막</title>
+    <link rel="stylesheet" href="../../css/desert-theme.css" />
+    <style>
+        :root {
+            --sky-light: #e8f6ff;
+            --sky-mid: #cbeaff;
+            --sky-deep: #4da3e0;
+            --sand-white: #fcfaf5;
+            --sand-warm: #f5e6c4;
+            --sand-gold: #d9a441;
+            --sand-amber: #b87d24;
+            --ink-dark: #2c353d;
+            --ink-muted: #5f6c78;
+            --card-border: rgba(217, 164, 65, 0.35);
+            --shadow-soft: 0 10px 26px rgba(45, 95, 135, 0.12);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Pretendard", "Malgun Gothic", -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--ink-dark);
+            background:
+                radial-gradient(circle at 82% 10%, rgba(255, 250, 224, 0.95) 0%, rgba(255, 250, 224, 0) 28%),
+                linear-gradient(180deg,
+                    #b9e2ff 0%,
+                    var(--sky-light) 34%,
+                    var(--sand-white) 62%,
+                    var(--sand-warm) 100%);
+            padding: 28px 20px 64px;
+            overflow-x: hidden;
+        }
+
+        /* 메인 페이지 상단 알약 버튼 스타일 */
+        nav.top-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            max-width: 960px;
+            margin: 0 auto 14px;
+            padding: 6px 12px 14px;
+        }
+
+        nav.top-nav button {
+            appearance: none;
+            border: 1px solid rgba(77, 163, 224, 0.45);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(6px);
+            color: #235784;
+            font-size: 0.98rem;
+            font-weight: 700;
+            padding: 11px 22px;
+            border-radius: 999px;
+            cursor: pointer;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(58, 123, 173, 0.1);
+            transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        }
+
+        nav.top-nav button:hover {
+            transform: translateY(-2px);
+            background: #ffffff;
+            border-color: var(--sand-gold);
+            color: var(--sand-amber);
+            box-shadow: 0 7px 16px rgba(217, 164, 65, 0.22);
+        }
+
+        nav.top-nav button.active {
+            background: linear-gradient(135deg, #4da3e0 0%, #7ec4f2 55%, #e8be68 100%);
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 6px 18px rgba(77, 163, 224, 0.35);
+            text-shadow: 0 1px 2px rgba(20, 50, 80, 0.25);
+        }
+
+        body>h2 {
+            max-width: 780px;
+            margin: 0 auto 18px;
+            padding: 14px 20px;
+            text-align: center;
+            font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #1f4e78;
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9);
+        }
+
+        #content {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        #content h3 {
+            margin: 0 0 24px;
+            padding: 12px 18px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #5d4012;
+            background: linear-gradient(90deg, rgba(255, 252, 245, 0.94) 0%, rgba(245, 230, 196, 0.82) 68%, rgba(203, 234, 255, 0.58) 100%);
+            border-left: 5px solid var(--sand-gold);
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 14px rgba(184, 125, 36, 0.08);
+            line-height: 1.45;
+            overflow-wrap: break-word;
+        }
+
+        #content>p {
+            margin: 24px auto;
+            padding: 20px;
+            max-width: 540px;
+            text-align: center;
+            font-weight: 700;
+            color: var(--ink-muted);
+            background: rgba(255, 253, 248, 0.92);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .pro-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+            align-items: stretch;
+        }
+
+        .pro-card {
+            min-width: 0;
+            background: linear-gradient(180deg, #ffffff 0%, var(--sand-white) 72%, #faeed4 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        }
+
+        .pro-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--sand-gold);
+            box-shadow: 0 16px 32px rgba(45, 95, 135, 0.16), 0 0 0 2px rgba(232, 190, 104, 0.25);
+        }
+
+        .pro-image-wrap {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            border-radius: 14px;
+            padding: 12px;
+            background: linear-gradient(180deg, rgba(232, 246, 255, 0.85) 0%, rgba(255, 253, 248, 0.9) 100%);
+            border: 2px solid rgba(255, 255, 255, 0.95);
+            box-shadow: 0 6px 14px rgba(130, 96, 38, 0.14);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .pro-image-wrap img,
+        .char-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .pro-info-list {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .pro-info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(217, 164, 65, 0.24);
+        }
+
+        .pro-label {
+            font-size: 0.84rem;
+            font-weight: 800;
+            color: var(--sand-amber);
+            letter-spacing: 0.02em;
+        }
+
+        .pro-value {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--ink-dark);
+            white-space: normal;
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
+
+        .pro-info-item.is-name .pro-value {
+            font-size: 1.18rem;
+            font-weight: 800;
+            color: #1f4e78;
+        }
+
+        .pro-info-item.is-job .pro-value {
+            font-weight: 700;
+            color: #5d4012;
+        }
+
+        .pro-info-item.is-race .pro-value {
+            font-weight: 600;
+            color: var(--ink-muted);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px 48px;
+            }
+
+            nav.top-nav {
+                gap: 8px;
+            }
+
+            nav.top-nav button {
+                font-size: 0.9rem;
+                padding: 9px 16px;
+            }
+
+            .pro-grid {
+                gap: 20px;
+            }
+
+            .pro-card {
+                padding: 16px;
+            }
+
+            .pro-image-wrap {
+                aspect-ratio: 4 / 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav">
+        <button type="button" onclick="location.href='../../index.html'">홈으로</button>
+        <button type="button" onclick="location.href='../../index.html#mobs'">몬스터 도감</button>
+        <button type="button" onclick="location.href='../board/board.html'">커뮤니티</button>
+        <button type="button" onclick="location.href='../notice/notice.html'">공지사항</button>
+        <button type="button" class="active" onclick="location.href='./pro.html'">주인공 캐릭터</button>
+    </nav>
+
+    <h2>하얀 사막의 주인공 캐릭터들</h2>
+    <div id="content"></div>
+
+    <script src="./pro.js"></script>
+    <script>
+        const contentDiv = document.getElementById("content");
+
+        async function renderAll() {
+            document.body.classList.remove("admin-mode");
+
+            const list = await getAll();
+
+            let html = `
+        <h3>당신과 함께 모험을 떠날 주인공 캐릭터들입니다.</h3>
+      `;
+
+            if (!Array.isArray(list) || list.length === 0) {
+                html += `<p>표시할 주인공 캐릭터가 없습니다.</p>`;
+            } else {
+                html += `<div class="pro-grid">`;
+
+                list.forEach((obj) => {
+                    html += `
+            <article class="pro-card">
+              <div class="pro-image-wrap">
+                <img class="char-img" src="${obj.image}" alt="${obj.name ?? "주인공 캐릭터"}" />
+              </div>
+              <div class="pro-info-list">
+                <div class="pro-info-item is-name">
+                  <span class="pro-label">이름:</span>
+                  <span class="pro-value">${obj.name ?? ""}</span>
+                </div>
+                <div class="pro-info-item is-job">
+                  <span class="pro-label">직업:</span>
+                  <span class="pro-value">${obj.job ?? ""}</span>
+                </div>
+                <div class="pro-info-item is-race">
+                  <span class="pro-label">종족:</span>
+                  <span class="pro-value">${obj.race ?? ""}</span>
+                </div>
+                <div class="pro-info-item is-desc">
+                  <span class="pro-label">설명:</span>
+                  <span class="pro-value">${obj.description ?? ""}</span>
+                </div>
+              </div>
+            </article>
+          `;
+                });
+
+                html += `</div>`;
+            }
+
+            contentDiv.innerHTML = html;
+        }
+
+        renderAll();
+    </script>
+</body>
+
+</html>

@@ -1,2196 +1,2237 @@
 [
-  {
-    "id": 1,
-    "name": "꼬마 모래두더지",
-    "level": 1,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 97,
-    "exp": 19,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 11,
-    "description": "아직 덩치는 작지만 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "./image/monster01.jpg"
-  },
-  {
-    "id": 2,
-    "name": "꼬마 심연의지네",
-    "level": 1,
-    "habitat": "모래폭풍의 눈",
-    "hp": 91,
-    "exp": 18,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 10,
-    "description": "아직 덩치는 작지만 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "./image/monster02.jpg"
-  },
-  {
-    "id": 3,
-    "name": "꼬마 백색미노타우로스",
-    "level": 1,
-    "habitat": "소금 결정 동굴",
-    "hp": 110,
-    "exp": 22,
-    "drops": [
-      {
-        "item_id": "ITEM_L08",
-        "name": "사막 약초 묶음",
-        "drop_rate": 0.35,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 13,
-    "description": "아직 덩치는 작지만 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "./image/monster03.jpg"
-  },
-  {
-    "id": 4,
-    "name": "어린 모래두더지",
-    "level": 1,
-    "habitat": "얼어붙은 오아시스",
-    "hp": 103,
-    "exp": 20,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 12,
-    "description": "태어난 지 얼마 되지 않아 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "./image/monster04.jpg"
-  },
-  {
-    "id": 5,
-    "name": "떠돌이 사막여우",
-    "level": 2,
-    "habitat": "신기루 협곡",
-    "hp": 172,
-    "exp": 29,
-    "drops": [
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 17,
-    "description": "사막 전역을 정처 없이 배회하며 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster05.jpg"
-  },
-  {
-    "id": 6,
-    "name": "모래 모래폭풍매",
-    "level": 2,
-    "habitat": "고대 거신의 잔해",
-    "hp": 155,
-    "exp": 34,
-    "drops": [
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_L06",
-        "name": "녹슨 사막 동전",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 15,
-    "description": "하얀 모래의 기운을 머금고 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
-    "image": "./image/monster06.jpg"
-  },
-  {
-    "id": 7,
-    "name": "하얀 백사도마뱀",
-    "level": 2,
-    "habitat": "백사 평원",
-    "hp": 162,
-    "exp": 32,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 15,
-    "description": "온몸이 백사처럼 새하얗게 변이되어 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "./image/monster07.jpg"
-  },
-  {
-    "id": 8,
-    "name": "날쌘 결정거미",
-    "level": 2,
-    "habitat": "달빛 사구",
-    "hp": 171,
-    "exp": 30,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 17,
-    "description": "눈에 보이지 않을 만큼 빠른 속도로 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "./image/monster08.jpg"
-  },
-  {
-    "id": 9,
-    "name": "모래 모래마녀",
-    "level": 2,
-    "habitat": "얼어붙은 오아시스",
-    "hp": 163,
-    "exp": 30,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 18,
-    "description": "하얀 모래의 기운을 머금고 금지된 사막의 주술을 외워 모래와 바람을 자유자재로 부립니다.",
-    "image": "./image/monster09.jpg"
-  },
-  {
-    "id": 10,
-    "name": "하얀 모래골렘",
-    "level": 2,
-    "habitat": "백사 평원",
-    "hp": 162,
-    "exp": 28,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 17,
-    "description": "온몸이 백사처럼 새하얗게 변이되어 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
-    "image": "./image/monster10.jpg"
-  },
-  {
-    "id": 11,
-    "name": "하얀 심연의지네",
-    "level": 2,
-    "habitat": "백골의 묘지",
-    "hp": 161,
-    "exp": 35,
-    "drops": [
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 18,
-    "description": "온몸이 백사처럼 새하얗게 변이되어 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "./image/monster11.jpg"
-  },
-  {
-    "id": 12,
-    "name": "단단한 백골병사",
-    "level": 3,
-    "habitat": "고대 거신의 잔해",
-    "hp": 278,
-    "exp": 49,
-    "drops": [
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 28,
-    "description": "돌처럼 굳어진 외피로 무장한 채 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
-    "image": "./image/monster12.jpg"
-  },
-  {
-    "id": 13,
-    "name": "성난 백골병사",
-    "level": 3,
-    "habitat": "얼어붙은 오아시스",
-    "hp": 276,
-    "exp": 52,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 23,
-    "description": "극도로 예민하고 공격적인 성향으로 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
-    "image": "./image/monster13.jpg"
-  },
-  {
-    "id": 14,
-    "name": "단단한 모래뱀",
-    "level": 3,
-    "habitat": "모래폭풍의 눈",
-    "hp": 282,
-    "exp": 46,
-    "drops": [
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_L08",
-        "name": "사막 약초 묶음",
-        "drop_rate": 0.35,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 26,
-    "description": "돌처럼 굳어진 외피로 무장한 채 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "./image/monster14.jpg"
-  },
-  {
-    "id": 15,
-    "name": "성난 백색미노타우로스",
-    "level": 3,
-    "habitat": "백사 평원",
-    "hp": 287,
-    "exp": 56,
-    "drops": [
-      {
-        "item_id": "ITEM_L06",
-        "name": "녹슨 사막 동전",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 23,
-    "description": "극도로 예민하고 공격적인 성향으로 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "./image/monster15.jpg"
-  },
-  {
-    "id": 16,
-    "name": "성난 오아시스악어",
-    "level": 3,
-    "habitat": "얼어붙은 오아시스",
-    "hp": 273,
-    "exp": 45,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 28,
-    "description": "극도로 예민하고 공격적인 성향으로 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "./image/monster16.jpg"
-  },
-  {
-    "id": 17,
-    "name": "사구 신기루망령",
-    "level": 3,
-    "habitat": "고대 거신의 잔해",
-    "hp": 282,
-    "exp": 48,
-    "drops": [
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 24,
-    "description": "거대한 모래 언덕을 영역으로 삼아 여행자에게 헛것을 보여주어 깊은 사막 한가운데로 유인하는 유령입니다.",
-    "image": "./image/monster17.jpg"
-  },
-  {
-    "id": 18,
-    "name": "사구 모래마녀",
-    "level": 3,
-    "habitat": "백골의 묘지",
-    "hp": 275,
-    "exp": 45,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 23,
-    "description": "거대한 모래 언덕을 영역으로 삼아 금지된 사막의 주술을 외워 모래와 바람을 자유자재로 부립니다.",
-    "image": "./image/monster18.jpg"
-  },
-  {
-    "id": 19,
-    "name": "사구 백골병사",
-    "level": 3,
-    "habitat": "하얀 심연의 제단",
-    "hp": 249,
-    "exp": 46,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 28,
-    "description": "거대한 모래 언덕을 영역으로 삼아 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
-    "image": "./image/monster19.jpg"
-  },
-  {
-    "id": 20,
-    "name": "단단한 선인장정령",
-    "level": 3,
-    "habitat": "달빛 사구",
-    "hp": 279,
-    "exp": 47,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 25,
-    "description": "돌처럼 굳어진 외피로 무장한 채 메마른 사막의 수분을 머금고 가시를 발사하는 식물형 정령입니다.",
-    "image": "./image/monster20.jpg"
-  },
-  {
-    "id": 21,
-    "name": "단단한 신기루망령",
-    "level": 3,
-    "habitat": "모래폭풍의 눈",
-    "hp": 286,
-    "exp": 55,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L08",
-        "name": "사막 약초 묶음",
-        "drop_rate": 0.35,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 25,
-    "description": "돌처럼 굳어진 외피로 무장한 채 여행자에게 헛것을 보여주어 깊은 사막 한가운데로 유인하는 유령입니다.",
-    "image": "./image/monster21.jpg"
-  },
-  {
-    "id": 22,
-    "name": "단단한 백사도마뱀",
-    "level": 3,
-    "habitat": "백골의 묘지",
-    "hp": 245,
-    "exp": 54,
-    "drops": [
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 27,
-    "description": "돌처럼 굳어진 외피로 무장한 채 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "./image/monster22.jpg"
-  },
-  {
-    "id": 23,
-    "name": "단단한 모래두더지",
-    "level": 3,
-    "habitat": "신기루 협곡",
-    "hp": 289,
-    "exp": 55,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 23,
-    "description": "돌처럼 굳어진 외피로 무장한 채 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "./image/monster23.jpg"
-  },
-  {
-    "id": 24,
-    "name": "사막 모래골렘",
-    "level": 4,
-    "habitat": "신기루 협곡",
-    "hp": 469,
-    "exp": 79,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 38,
-    "description": "혹독한 모래바람을 견뎌내며 진화해 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
-    "image": "./image/monster24.jpg"
-  },
-  {
-    "id": 25,
-    "name": "거친 심연의지네",
-    "level": 4,
-    "habitat": "하얀 심연의 제단",
-    "hp": 464,
-    "exp": 79,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 41,
-    "description": "사납고 난폭한 본능을 드러내며 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "./image/monster25.jpg"
-  },
-  {
-    "id": 26,
-    "name": "사막 오아시스악어",
-    "level": 4,
-    "habitat": "백골의 묘지",
-    "hp": 458,
-    "exp": 85,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 41,
-    "description": "혹독한 모래바람을 견뎌내며 진화해 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "./image/monster26.jpg"
-  },
-  {
-    "id": 27,
-    "name": "사막 화염딱정벌레",
-    "level": 4,
-    "habitat": "백골의 묘지",
-    "hp": 417,
-    "exp": 79,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 37,
-    "description": "혹독한 모래바람을 견뎌내며 진화해 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
-    "image": "./image/monster27.jpg"
-  },
-  {
-    "id": 28,
-    "name": "변이된 선인장정령",
-    "level": 4,
-    "habitat": "모래폭풍의 눈",
-    "hp": 427,
-    "exp": 80,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 41,
-    "description": "고대 마력의 영향으로 기괴하게 변해 메마른 사막의 수분을 머금고 가시를 발사하는 식물형 정령입니다.",
-    "image": "./image/monster28.jpg"
-  },
-  {
-    "id": 29,
-    "name": "변이된 백색미노타우로스",
-    "level": 4,
-    "habitat": "신기루 협곡",
-    "hp": 410,
-    "exp": 89,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 34,
-    "description": "고대 마력의 영향으로 기괴하게 변해 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "./image/monster29.jpg"
-  },
-  {
-    "id": 30,
-    "name": "거친 오아시스악어",
-    "level": 4,
-    "habitat": "달빛 사구",
-    "hp": 465,
-    "exp": 78,
-    "drops": [
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 40,
-    "description": "사납고 난폭한 본능을 드러내며 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "./image/monster30.jpg"
-  },
-  {
-    "id": 31,
-    "name": "변이된 모래두더지",
-    "level": 4,
-    "habitat": "모래폭풍의 눈",
-    "hp": 437,
-    "exp": 86,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L08",
-        "name": "사막 약초 묶음",
-        "drop_rate": 0.35,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 38,
-    "description": "고대 마력의 영향으로 기괴하게 변해 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "./image/monster31.jpg"
-  },
-  {
-    "id": 32,
-    "name": "거친 회오리박쥐",
-    "level": 4,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 431,
-    "exp": 73,
-    "drops": [
-      {
-        "item_id": "ITEM_L01",
-        "name": "하얀 모래 가루",
-        "drop_rate": 0.65,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 34,
-    "description": "사납고 난폭한 본능을 드러내며 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
-    "image": "./image/monster32.jpg"
-  },
-  {
-    "id": 33,
-    "name": "변이된 독침말벌",
-    "level": 4,
-    "habitat": "고대 거신의 잔해",
-    "hp": 424,
-    "exp": 73,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 35,
-    "description": "고대 마력의 영향으로 기괴하게 변해 사막의 뜨거운 바람을 가르며 치명적인 신경독을 주입하는 거대 벌입니다.",
-    "image": "./image/monster33.jpg"
-  },
-  {
-    "id": 34,
-    "name": "사막 백골병사",
-    "level": 4,
-    "habitat": "모래폭풍의 눈",
-    "hp": 419,
-    "exp": 79,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 34,
-    "description": "혹독한 모래바람을 견뎌내며 진화해 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
-    "image": "./image/monster34.jpg"
-  },
-  {
-    "id": 35,
-    "name": "야생의 결정거미",
-    "level": 4,
-    "habitat": "소금 결정 동굴",
-    "hp": 489,
-    "exp": 82,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 37,
-    "description": "길들여지지 않은 야성을 뿜어내며 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "./image/monster35.jpg"
-  },
-  {
-    "id": 36,
-    "name": "야생의 모래폭풍매",
-    "level": 4,
-    "habitat": "백골의 묘지",
-    "hp": 413,
-    "exp": 72,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 41,
-    "description": "길들여지지 않은 야성을 뿜어내며 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
-    "image": "./image/monster36.jpg"
-  },
-  {
-    "id": 37,
-    "name": "거친 독침말벌",
-    "level": 4,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 420,
-    "exp": 83,
-    "drops": [
-      {
-        "item_id": "ITEM_L06",
-        "name": "녹슨 사막 동전",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 35,
-    "description": "사납고 난폭한 본능을 드러내며 사막의 뜨거운 바람을 가르며 치명적인 신경독을 주입하는 거대 벌입니다.",
-    "image": "./image/monster37.jpg"
-  },
-  {
-    "id": 38,
-    "name": "야생의 모래뱀",
-    "level": 4,
-    "habitat": "달빛 사구",
-    "hp": 473,
-    "exp": 81,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 34,
-    "description": "길들여지지 않은 야성을 뿜어내며 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "./image/monster38.jpg"
-  },
-  {
-    "id": 39,
-    "name": "야생의 사막여우",
-    "level": 4,
-    "habitat": "신기루 협곡",
-    "hp": 474,
-    "exp": 76,
-    "drops": [
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 38,
-    "description": "길들여지지 않은 야성을 뿜어내며 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster39.jpg"
-  },
-  {
-    "id": 40,
-    "name": "그림자 회오리박쥐",
-    "level": 5,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 795,
-    "exp": 132,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 55,
-    "description": "사구의 어둠 속에 몸을 숨긴 채 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
-    "image": "./image/monster40.jpg"
-  },
-  {
-    "id": 41,
-    "name": "광폭한 결정거미",
-    "level": 5,
-    "habitat": "백사 평원",
-    "hp": 666,
-    "exp": 127,
-    "drops": [
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L08",
-        "name": "사막 약초 묶음",
-        "drop_rate": 0.35,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 53,
-    "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "./image/monster41.jpg"
-  },
-  {
-    "id": 42,
-    "name": "광폭한 백색미노타우로스",
-    "level": 5,
-    "habitat": "백사 평원",
-    "hp": 694,
-    "exp": 119,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 62,
-    "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "./image/monster42.jpg"
-  },
-  {
-    "id": 43,
-    "name": "폭풍 사구늑대",
-    "level": 5,
-    "habitat": "하얀 심연의 제단",
-    "hp": 807,
-    "exp": 121,
-    "drops": [
-      {
-        "item_id": "ITEM_L01",
-        "name": "하얀 모래 가루",
-        "drop_rate": 0.65,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 57,
-    "description": "몸 주변에 작은 모래 회오리를 두르고 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
-    "image": "./image/monster43.jpg"
-  },
-  {
-    "id": 44,
-    "name": "그림자 사구늑대",
-    "level": 5,
-    "habitat": "백사 평원",
-    "hp": 757,
-    "exp": 123,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 61,
-    "description": "사구의 어둠 속에 몸을 숨긴 채 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
-    "image": "./image/monster44.jpg"
-  },
-  {
-    "id": 45,
-    "name": "그림자 백색미노타우로스",
-    "level": 5,
-    "habitat": "모래폭풍의 눈",
-    "hp": 705,
-    "exp": 124,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 53,
-    "description": "사구의 어둠 속에 몸을 숨긴 채 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "./image/monster45.jpg"
-  },
-  {
-    "id": 46,
-    "name": "폭풍 모래뱀",
-    "level": 5,
-    "habitat": "백골의 묘지",
-    "hp": 771,
-    "exp": 142,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 61,
-    "description": "몸 주변에 작은 모래 회오리를 두르고 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "./image/monster46.jpg"
-  },
-  {
-    "id": 47,
-    "name": "강철 사막여우",
-    "level": 5,
-    "habitat": "모래폭풍의 눈",
-    "hp": 675,
-    "exp": 144,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 58,
-    "description": "강철보다 단단한 신체 구조를 지니고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster47.jpg"
-  },
-  {
-    "id": 48,
-    "name": "광폭한 사구늑대",
-    "level": 5,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 724,
-    "exp": 124,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 51,
-    "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
-    "image": "./image/monster48.jpg"
-  },
-  {
-    "id": 49,
-    "name": "그림자 결정거미",
-    "level": 5,
-    "habitat": "신기루 협곡",
-    "hp": 737,
-    "exp": 128,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L06",
-        "name": "녹슨 사막 동전",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 61,
-    "description": "사구의 어둠 속에 몸을 숨긴 채 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "./image/monster49.jpg"
-  },
-  {
-    "id": 50,
-    "name": "폭풍 사막여우",
-    "level": 5,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 711,
-    "exp": 135,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 55,
-    "description": "몸 주변에 작은 모래 회오리를 두르고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster50.jpg"
-  },
-  {
-    "id": 51,
-    "name": "그림자 오아시스악어",
-    "level": 5,
-    "habitat": "하얀 심연의 제단",
-    "hp": 796,
-    "exp": 120,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 57,
-    "description": "사구의 어둠 속에 몸을 숨긴 채 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "./image/monster51.jpg"
-  },
-  {
-    "id": 52,
-    "name": "폭풍 오아시스악어",
-    "level": 5,
-    "habitat": "백사 평원",
-    "hp": 799,
-    "exp": 142,
-    "drops": [
-      {
-        "item_id": "ITEM_L06",
-        "name": "녹슨 사막 동전",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 59,
-    "description": "몸 주변에 작은 모래 회오리를 두르고 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "./image/monster52.jpg"
-  },
-  {
-    "id": 53,
-    "name": "광폭한 백사도마뱀",
-    "level": 5,
-    "habitat": "백골의 묘지",
-    "hp": 746,
-    "exp": 138,
-    "drops": [
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 52,
-    "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "./image/monster53.jpg"
-  },
-  {
-    "id": 54,
-    "name": "광폭한 모래골렘",
-    "level": 5,
-    "habitat": "모래폭풍의 눈",
-    "hp": 741,
-    "exp": 134,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 53,
-    "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
-    "image": "./image/monster54.jpg"
-  },
-  {
-    "id": 55,
-    "name": "광폭한 모래뱀",
-    "level": 5,
-    "habitat": "하얀 심연의 제단",
-    "hp": 811,
-    "exp": 126,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 57,
-    "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "./image/monster55.jpg"
-  },
-  {
-    "id": 56,
-    "name": "광폭한 심연의지네",
-    "level": 5,
-    "habitat": "하얀 심연의 제단",
-    "hp": 748,
-    "exp": 131,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 58,
-    "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "./image/monster56.jpg"
-  },
-  {
-    "id": 57,
-    "name": "폭풍 신기루망령",
-    "level": 5,
-    "habitat": "고대 거신의 잔해",
-    "hp": 751,
-    "exp": 119,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 54,
-    "description": "몸 주변에 작은 모래 회오리를 두르고 여행자에게 헛것을 보여주어 깊은 사막 한가운데로 유인하는 유령입니다.",
-    "image": "./image/monster57.jpg"
-  },
-  {
-    "id": 58,
-    "name": "강철 모래두더지",
-    "level": 5,
-    "habitat": "백사 평원",
-    "hp": 728,
-    "exp": 132,
-    "drops": [
-      {
-        "item_id": "ITEM_L08",
-        "name": "사막 약초 묶음",
-        "drop_rate": 0.35,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 60,
-    "description": "강철보다 단단한 신체 구조를 지니고 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "./image/monster58.jpg"
-  },
-  {
-    "id": 59,
-    "name": "심연의 심연의지네",
-    "level": 6,
-    "habitat": "소금 결정 동굴",
-    "hp": 1282,
-    "exp": 212,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 91,
-    "description": "사막 지하 깊은 곳의 어둠을 품고 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "./image/monster59.jpg"
-  },
-  {
-    "id": 60,
-    "name": "고대 사막여우",
-    "level": 6,
-    "habitat": "모래폭풍의 눈",
-    "hp": 1155,
-    "exp": 199,
-    "drops": [
-      {
-        "item_id": "ITEM_L01",
-        "name": "하얀 모래 가루",
-        "drop_rate": 0.65,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 92,
-    "description": "수천 년의 세월을 버텨온 신비한 힘으로 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster60.jpg"
-  },
-  {
-    "id": 61,
-    "name": "결정 사막여우",
-    "level": 6,
-    "habitat": "달빛 사구",
-    "hp": 1133,
-    "exp": 217,
-    "drops": [
-      {
-        "item_id": "ITEM_L08",
-        "name": "사막 약초 묶음",
-        "drop_rate": 0.35,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 92,
-    "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster61.jpg"
-  },
-  {
-    "id": 62,
-    "name": "심연의 백색미노타우로스",
-    "level": 6,
-    "habitat": "달빛 사구",
-    "hp": 1328,
-    "exp": 198,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 91,
-    "description": "사막 지하 깊은 곳의 어둠을 품고 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "./image/monster62.jpg"
-  },
-  {
-    "id": 63,
-    "name": "저주받은 독침말벌",
-    "level": 6,
-    "habitat": "달빛 사구",
-    "hp": 1259,
-    "exp": 203,
-    "drops": [
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 84,
-    "description": "고대 신전의 어두운 주술에 얽매여 사막의 뜨거운 바람을 가르며 치명적인 신경독을 주입하는 거대 벌입니다.",
-    "image": "./image/monster63.jpg"
-  },
-  {
-    "id": 64,
-    "name": "결정 결정거미",
-    "level": 6,
-    "habitat": "백골의 묘지",
-    "hp": 1180,
-    "exp": 222,
-    "drops": [
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 78,
-    "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "./image/monster64.jpg"
-  },
-  {
-    "id": 65,
-    "name": "결정 화염딱정벌레",
-    "level": 6,
-    "habitat": "얼어붙은 오아시스",
-    "hp": 1279,
-    "exp": 201,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L06",
-        "name": "녹슨 사막 동전",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 78,
-    "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
-    "image": "./image/monster65.jpg"
-  },
-  {
-    "id": 66,
-    "name": "심연의 오아시스악어",
-    "level": 6,
-    "habitat": "백사 평원",
-    "hp": 1151,
-    "exp": 214,
-    "drops": [
-      {
-        "item_id": "ITEM_L10",
-        "name": "오아시스 물방울",
-        "drop_rate": 0.2,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 88,
-    "description": "사막 지하 깊은 곳의 어둠을 품고 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
-    "image": "./image/monster66.jpg"
-  },
-  {
-    "id": 67,
-    "name": "심연의 석상수호병",
-    "level": 6,
-    "habitat": "백사 평원",
-    "hp": 1340,
-    "exp": 210,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L09",
-        "name": "단단한 갑각 파편",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 85,
-    "description": "사막 지하 깊은 곳의 어둠을 품고 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
-    "image": "./image/monster67.jpg"
-  },
-  {
-    "id": 68,
-    "name": "결정 석상수호병",
-    "level": 6,
-    "habitat": "소금 결정 동굴",
-    "hp": 1168,
-    "exp": 215,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 91,
-    "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
-    "image": "./image/monster68.jpg"
-  },
-  {
-    "id": 69,
-    "name": "저주받은 화염딱정벌레",
-    "level": 6,
-    "habitat": "얼어붙은 오아시스",
-    "hp": 1314,
-    "exp": 217,
-    "drops": [
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 80,
-    "description": "고대 신전의 어두운 주술에 얽매여 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
-    "image": "./image/monster69.jpg"
-  },
-  {
-    "id": 70,
-    "name": "고대 백사도마뱀",
-    "level": 6,
-    "habitat": "모래폭풍의 눈",
-    "hp": 1133,
-    "exp": 217,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 81,
-    "description": "수천 년의 세월을 버텨온 신비한 힘으로 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "./image/monster70.jpg"
-  },
-  {
-    "id": 71,
-    "name": "심연의 모래골렘",
-    "level": 6,
-    "habitat": "소금 결정 동굴",
-    "hp": 1215,
-    "exp": 208,
-    "drops": [
-      {
-        "item_id": "ITEM_L05",
-        "name": "마른 선인장 조각",
-        "drop_rate": 0.55,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L07",
-        "name": "희미한 마력석",
-        "drop_rate": 0.25,
-        "rarity": "고급"
-      }
-    ],
-    "attack": 86,
-    "description": "사막 지하 깊은 곳의 어둠을 품고 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
-    "image": "./image/monster71.jpg"
-  },
-  {
-    "id": 72,
-    "name": "저주받은 백사도마뱀",
-    "level": 6,
-    "habitat": "달빛 사구",
-    "hp": 1103,
-    "exp": 222,
-    "drops": [
-      {
-        "item_id": "ITEM_L04",
-        "name": "부러진 송곳니",
-        "drop_rate": 0.4,
-        "rarity": "일반"
-      },
-      {
-        "item_id": "ITEM_L02",
-        "name": "거친 짐승의 가죽",
-        "drop_rate": 0.45,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 77,
-    "description": "고대 신전의 어두운 주술에 얽매여 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "./image/monster72.jpg"
-  },
-  {
-    "id": 73,
-    "name": "고대 모래두더지",
-    "level": 6,
-    "habitat": "소금 결정 동굴",
-    "hp": 1150,
-    "exp": 189,
-    "drops": [
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 80,
-    "description": "수천 년의 세월을 버텨온 신비한 힘으로 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "./image/monster73.jpg"
-  },
-  {
-    "id": 74,
-    "name": "심연의 사막여우",
-    "level": 6,
-    "habitat": "하얀 심연의 제단",
-    "hp": 1341,
-    "exp": 201,
-    "drops": [
-      {
-        "item_id": "ITEM_L06",
-        "name": "녹슨 사막 동전",
-        "drop_rate": 0.3,
-        "rarity": "고급"
-      },
-      {
-        "item_id": "ITEM_L03",
-        "name": "작은 소금 결정",
-        "drop_rate": 0.5,
-        "rarity": "일반"
-      }
-    ],
-    "attack": 90,
-    "description": "사막 지하 깊은 곳의 어둠을 품고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster74.jpg"
-  },
-  {
-    "id": 75,
-    "name": "정예 모래뱀",
-    "level": 7,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 1870,
-    "exp": 304,
-    "drops": [
-      {
-        "item_id": "ITEM_H001",
-        "name": "정예의 모래뱀의 심장 파편",
-        "drop_rate": 0.25,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_H002",
-        "name": "타락한 모래뱀의 마력 핵",
-        "drop_rate": 0.33,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 122,
-    "description": "수많은 전투를 거쳐 살아남은 강자로 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "./image/monster75.jpg"
-  },
-  {
-    "id": 76,
-    "name": "정예 심연의지네",
-    "level": 7,
-    "habitat": "소금 결정 동굴",
-    "hp": 1867,
-    "exp": 339,
-    "drops": [
-      {
-        "item_id": "ITEM_H003",
-        "name": "백색의 심연의지네의 영혼석",
-        "drop_rate": 0.35,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 134,
-    "description": "수많은 전투를 거쳐 살아남은 강자로 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
-    "image": "./image/monster76.jpg"
-  },
-  {
-    "id": 77,
-    "name": "정예 사구늑대",
-    "level": 7,
-    "habitat": "고대 거신의 잔해",
-    "hp": 2034,
-    "exp": 348,
-    "drops": [
-      {
-        "item_id": "ITEM_H004",
-        "name": "학살자의 사구늑대의 훈장",
-        "drop_rate": 0.15,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_H005",
-        "name": "수호자의 사구늑대의 룬 문자판",
-        "drop_rate": 0.26,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 115,
-    "description": "수많은 전투를 거쳐 살아남은 강자로 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
-    "image": "./image/monster77.jpg"
-  },
-  {
-    "id": 78,
-    "name": "학살자 사막여우",
-    "level": 7,
-    "habitat": "모래폭풍의 눈",
-    "hp": 2000,
-    "exp": 359,
-    "drops": [
-      {
-        "item_id": "ITEM_H006",
-        "name": "파멸의 사막여우의 비늘",
-        "drop_rate": 0.26,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 135,
-    "description": "침입자들을 무자비하게 도륙하는 존재로 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster78.jpg"
-  },
-  {
-    "id": 79,
-    "name": "백색의 모래마녀",
-    "level": 7,
-    "habitat": "고대 거신의 잔해",
-    "hp": 2211,
-    "exp": 362,
-    "drops": [
-      {
-        "item_id": "ITEM_H007",
-        "name": "신기루의 모래마녀의 발톱",
-        "drop_rate": 0.36,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_H008",
-        "name": "절망의 모래마녀의 눈동자",
-        "drop_rate": 0.3,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 127,
-    "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 금지된 사막의 주술을 외워 모래와 바람을 자유자재로 부립니다.",
-    "image": "./image/monster79.jpg"
-  },
-  {
-    "id": 80,
-    "name": "백색의 백골병사",
-    "level": 7,
-    "habitat": "신기루 협곡",
-    "hp": 1957,
-    "exp": 358,
-    "drops": [
-      {
-        "item_id": "ITEM_H009",
-        "name": "재앙의 백골병사의 왕관 조각",
-        "drop_rate": 0.29,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_H010",
-        "name": "군주의 백골병사의 마법서 잔해",
-        "drop_rate": 0.32,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 120,
-    "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
-    "image": "./image/monster80.jpg"
-  },
-  {
-    "id": 81,
-    "name": "백색의 모래두더지",
-    "level": 7,
-    "habitat": "달빛 사구",
-    "hp": 1981,
-    "exp": 324,
-    "drops": [
-      {
-        "item_id": "ITEM_H011",
-        "name": "초월한 모래두더지의 결정체",
-        "drop_rate": 0.24,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 128,
-    "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
-    "image": "./image/monster81.jpg"
-  },
-  {
-    "id": 82,
-    "name": "백색의 모래골렘",
-    "level": 7,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 2120,
-    "exp": 336,
-    "drops": [
-      {
-        "item_id": "ITEM_H012",
-        "name": "불멸의 모래골렘의 정수",
-        "drop_rate": 0.28,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 130,
-    "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
-    "image": "./image/monster82.jpg"
-  },
-  {
-    "id": 83,
-    "name": "타락한 백사도마뱀",
-    "level": 7,
-    "habitat": "소금 결정 동굴",
-    "hp": 2183,
-    "exp": 353,
-    "drops": [
-      {
-        "item_id": "ITEM_H013",
-        "name": "고대 백사도마뱀의 부적",
-        "drop_rate": 0.32,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 128,
-    "description": "사악한 마기에 잠식되어 흉포해진 모습으로 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "./image/monster83.jpg"
-  },
-  {
-    "id": 84,
-    "name": "학살자 모래폭풍매",
-    "level": 7,
-    "habitat": "백사 평원",
-    "hp": 1862,
-    "exp": 338,
-    "drops": [
-      {
-        "item_id": "ITEM_H014",
-        "name": "심연의 모래폭풍매의 고대 인장",
-        "drop_rate": 0.32,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_H015",
-        "name": "광휘의 모래폭풍매의 깃털",
-        "drop_rate": 0.23,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 120,
-    "description": "침입자들을 무자비하게 도륙하는 존재로 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
-    "image": "./image/monster84.jpg"
-  },
-  {
-    "id": 85,
-    "name": "백색의 석상수호병",
-    "level": 7,
-    "habitat": "고대 거신의 잔해",
-    "hp": 2086,
-    "exp": 345,
-    "drops": [
-      {
-        "item_id": "ITEM_H016",
-        "name": "칠흑의 석상수호병의 송곳니",
-        "drop_rate": 0.24,
-        "rarity": "희귀"
-      },
-      {
-        "item_id": "ITEM_H017",
-        "name": "폭풍의 석상수호병의 갑주 파편",
-        "drop_rate": 0.26,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 126,
-    "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
-    "image": "./image/monster85.jpg"
-  },
-  {
-    "id": 86,
-    "name": "백색의 결정거미",
-    "level": 7,
-    "habitat": "소금 결정 동굴",
-    "hp": 1876,
-    "exp": 325,
-    "drops": [
-      {
-        "item_id": "ITEM_H018",
-        "name": "결정화된 결정거미의 성물",
-        "drop_rate": 0.34,
-        "rarity": "희귀"
-      }
-    ],
-    "attack": 123,
-    "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
-    "image": "./image/monster86.jpg"
-  },
-  {
-    "id": 87,
-    "name": "파멸의 회오리박쥐",
-    "level": 8,
-    "habitat": "소금 결정 동굴",
-    "hp": 3491,
-    "exp": 517,
-    "drops": [
-      {
-        "item_id": "ITEM_H019",
-        "name": "저주받은 회오리박쥐의 계약서",
-        "drop_rate": 0.4,
-        "rarity": "영웅"
-      },
-      {
-        "item_id": "ITEM_H020",
-        "name": "성스러운 회오리박쥐의 모래시계",
-        "drop_rate": 0.36,
-        "rarity": "영웅"
-      }
-    ],
-    "attack": 204,
-    "description": "지나가는 자리마다 황폐함만을 남기며 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
-    "image": "./image/monster87.jpg"
-  },
-  {
-    "id": 88,
-    "name": "신기루 백골병사",
-    "level": 8,
-    "habitat": "백골의 묘지",
-    "hp": 3179,
-    "exp": 520,
-    "drops": [
-      {
-        "item_id": "ITEM_H021",
-        "name": "영혼의 백골병사의 열쇠",
-        "drop_rate": 0.22,
-        "rarity": "영웅"
-      }
-    ],
-    "attack": 167,
-    "description": "환영과 실체를 오가며 적을 농락하고 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
-    "image": "./image/monster88.jpg"
-  },
-  {
-    "id": 89,
-    "name": "수호자 백색미노타우로스",
-    "level": 8,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 3125,
-    "exp": 563,
-    "drops": [
-      {
-        "item_id": "ITEM_H022",
-        "name": "시간의 백색미노타우로스의 보주",
-        "drop_rate": 0.37,
-        "rarity": "영웅"
-      }
-    ],
-    "attack": 198,
-    "description": "사막의 비밀을 지키기 위해 탄생한 병기로 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
-    "image": "./image/monster89.jpg"
-  },
-  {
-    "id": 90,
-    "name": "신기루 석상수호병",
-    "level": 8,
-    "habitat": "달빛 사구",
-    "hp": 3447,
-    "exp": 525,
-    "drops": [
-      {
-        "item_id": "ITEM_H023",
-        "name": "공허의 석상수호병의 혈석",
-        "drop_rate": 0.21,
-        "rarity": "영웅"
-      }
-    ],
-    "attack": 178,
-    "description": "환영과 실체를 오가며 적을 농락하고 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
-    "image": "./image/monster90.jpg"
-  },
-  {
-    "id": 91,
-    "name": "절망의 사막여우",
-    "level": 8,
-    "habitat": "신기루 협곡",
-    "hp": 3406,
-    "exp": 544,
-    "drops": [
-      {
-        "item_id": "ITEM_H024",
-        "name": "정예의 사막여우의 심장 파편",
-        "drop_rate": 0.19,
-        "rarity": "영웅"
-      }
-    ],
-    "attack": 171,
-    "description": "마주치는 것만으로도 전의를 상실케 하며 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
-    "image": "./image/monster91.jpg"
-  },
-  {
-    "id": 92,
-    "name": "신기루 백사도마뱀",
-    "level": 8,
-    "habitat": "소금 결정 동굴",
-    "hp": 3117,
-    "exp": 553,
-    "drops": [
-      {
-        "item_id": "ITEM_H025",
-        "name": "타락한 백사도마뱀의 마력 핵",
-        "drop_rate": 0.34,
-        "rarity": "영웅"
-      }
-    ],
-    "attack": 193,
-    "description": "환영과 실체를 오가며 적을 농락하고 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
-    "image": "./image/monster92.jpg"
-  },
-  {
-    "id": 93,
-    "name": "절망의 모래폭풍매",
-    "level": 8,
-    "habitat": "달빛 사구",
-    "hp": 3300,
-    "exp": 557,
-    "drops": [
-      {
-        "item_id": "ITEM_H026",
-        "name": "백색의 모래폭풍매의 영혼석",
-        "drop_rate": 0.29,
-        "rarity": "영웅"
-      },
-      {
-        "item_id": "ITEM_H027",
-        "name": "학살자의 모래폭풍매의 훈장",
-        "drop_rate": 0.17,
-        "rarity": "영웅"
-      }
-    ],
-    "attack": 194,
-    "description": "마주치는 것만으로도 전의를 상실케 하며 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
-    "image": "./image/monster93.jpg"
-  },
-  {
-    "id": 94,
-    "name": "재앙의 회오리박쥐",
-    "level": 9,
-    "habitat": "소금 결정 동굴",
-    "hp": 5484,
-    "exp": 941,
-    "drops": [
-      {
-        "item_id": "ITEM_H028",
-        "name": "수호자의 회오리박쥐의 룬 문자판",
-        "drop_rate": 0.21,
-        "rarity": "전설"
-      }
-    ],
-    "attack": 253,
-    "description": "사막의 생태계를 뒤흔드는 재앙 그 자체로 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
-    "image": "./image/monster94.jpg"
-  },
-  {
-    "id": 95,
-    "name": "재앙의 모래뱀",
-    "level": 9,
-    "habitat": "백사 평원",
-    "hp": 5779,
-    "exp": 887,
-    "drops": [
-      {
-        "item_id": "ITEM_H029",
-        "name": "파멸의 모래뱀의 비늘",
-        "drop_rate": 0.22,
-        "rarity": "전설"
-      },
-      {
-        "item_id": "ITEM_H030",
-        "name": "신기루의 모래뱀의 발톱",
-        "drop_rate": 0.21,
-        "rarity": "전설"
-      }
-    ],
-    "attack": 292,
-    "description": "사막의 생태계를 뒤흔드는 재앙 그 자체로 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
-    "image": "./image/monster95.jpg"
-  },
-  {
-    "id": 96,
-    "name": "초월한 모래폭풍매",
-    "level": 9,
-    "habitat": "신기루 협곡",
-    "hp": 5421,
-    "exp": 839,
-    "drops": [
-      {
-        "item_id": "ITEM_H031",
-        "name": "절망의 모래폭풍매의 눈동자",
-        "drop_rate": 0.26,
-        "rarity": "전설"
-      }
-    ],
-    "attack": 298,
-    "description": "필멸자의 한계를 뛰어넘은 마력을 휘두르며 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
-    "image": "./image/monster96.jpg"
-  },
-  {
-    "id": 97,
-    "name": "군주 선인장정령",
-    "level": 9,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 5234,
-    "exp": 790,
-    "drops": [
-      {
-        "item_id": "ITEM_H032",
-        "name": "재앙의 선인장정령의 왕관 조각",
-        "drop_rate": 0.35,
-        "rarity": "전설"
-      }
-    ],
-    "attack": 251,
-    "description": "동족들을 거느리며 일대를 호령하는 지배자로 메마른 사막의 수분을 머금고 가시를 발사하는 식물형 정령입니다.",
-    "image": "./image/monster97.jpg"
-  },
-  {
-    "id": 98,
-    "name": "하얀사막의 패왕 아누비스",
-    "level": 10,
-    "habitat": "잊혀진 모래 신전",
-    "hp": 103914,
-    "exp": 22195,
-    "drops": [
-      {
-        "item_id": "BOSS_001",
-        "name": "패왕의 황금 심장",
-        "drop_rate": 0.15,
-        "rarity": "신화"
-      },
-      {
-        "item_id": "BOSS_002",
-        "name": "사막 지배자의 지팡이 도면",
-        "drop_rate": 0.25,
-        "rarity": "전설"
-      }
-    ],
-    "attack": 913,
-    "description": "하얀사막의 모든 모래와 망자를 지배하는 고대 신전의 절대적인 지배자입니다.",
-    "image": "./image/monster98.jpg"
-  },
-  {
-    "id": 99,
-    "name": "태초의 백사룡 세르펜스",
-    "level": 10,
-    "habitat": "모래폭풍의 눈",
-    "hp": 115716,
-    "exp": 19982,
-    "drops": [
-      {
-        "item_id": "BOSS_003",
-        "name": "백사룡의 역린",
-        "drop_rate": 0.12,
-        "rarity": "신화"
-      },
-      {
-        "item_id": "BOSS_004",
-        "name": "폭풍을 가르는 용의 날개막",
-        "drop_rate": 0.3,
-        "rarity": "전설"
-      }
-    ],
-    "attack": 1056,
-    "description": "날갯짓 한 번으로 대륙 전체에 하얀 모래폭풍을 불러일으키는 고대 용입니다.",
-    "image": "./image/monster99.jpg"
-  },
-  {
-    "id": 100,
-    "name": "종말의 거신 아틀라스 제로",
-    "level": 10,
-    "habitat": "하얀 심연의 제단",
-    "hp": 102841,
-    "exp": 23199,
-    "drops": [
-      {
-        "item_id": "BOSS_005",
-        "name": "제단의 영원한 동력핵",
-        "drop_rate": 0.1,
-        "rarity": "신화"
-      },
-      {
-        "item_id": "BOSS_006",
-        "name": "거신의 아다만티움 장갑판",
-        "drop_rate": 0.2,
-        "rarity": "전설"
-      }
-    ],
-    "attack": 1126,
-    "description": "하얀사막이 탄생하던 순간부터 잠들어 있던 고대 문명의 최종 병기입니다.",
-    "image": "./image/monster100.jpg"
-  }
+    {
+        "id": 1,
+        "name": "꼬마 모래두더지",
+        "level": 1,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 97,
+        "exp": 19,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 11,
+        "description": "아직 덩치는 작지만 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
+        "image": "./image/monster01.jpg"
+    },
+    {
+        "id": 2,
+        "name": "꼬마 심연의지네",
+        "level": 1,
+        "habitat": "모래폭풍의 눈",
+        "hp": 91,
+        "exp": 18,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 10,
+        "description": "아직 덩치는 작지만 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
+        "image": "./image/monster02.jpg"
+    },
+    {
+        "id": 3,
+        "name": "꼬마 백색미노타우로스",
+        "level": 1,
+        "habitat": "소금 결정 동굴",
+        "hp": 110,
+        "exp": 22,
+        "drops": [
+            {
+                "item_id": "ITEM_L08",
+                "name": "사막 약초 묶음",
+                "drop_rate": 0.35,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 13,
+        "description": "아직 덩치는 작지만 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
+        "image": "./image/monster03.jpg"
+    },
+    {
+        "id": 4,
+        "name": "어린 모래두더지",
+        "level": 1,
+        "habitat": "얼어붙은 오아시스",
+        "hp": 103,
+        "exp": 20,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 12,
+        "description": "태어난 지 얼마 되지 않아 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
+        "image": "./image/monster04.jpg"
+    },
+    {
+        "id": 5,
+        "name": "떠돌이 사막여우",
+        "level": 2,
+        "habitat": "신기루 협곡",
+        "hp": 172,
+        "exp": 29,
+        "drops": [
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 17,
+        "description": "사막 전역을 정처 없이 배회하며 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster05.jpg"
+    },
+    {
+        "id": 6,
+        "name": "모래 모래폭풍매",
+        "level": 2,
+        "habitat": "고대 거신의 잔해",
+        "hp": 155,
+        "exp": 34,
+        "drops": [
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_L06",
+                "name": "녹슨 사막 동전",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 15,
+        "description": "하얀 모래의 기운을 머금고 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
+        "image": "./image/monster06.jpg"
+    },
+    {
+        "id": 7,
+        "name": "하얀 백사도마뱀",
+        "level": 2,
+        "habitat": "백사 평원",
+        "hp": 162,
+        "exp": 32,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 15,
+        "description": "온몸이 백사처럼 새하얗게 변이되어 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
+        "image": "./image/monster07.jpg"
+    },
+    {
+        "id": 8,
+        "name": "날쌘 결정거미",
+        "level": 2,
+        "habitat": "달빛 사구",
+        "hp": 171,
+        "exp": 30,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 17,
+        "description": "눈에 보이지 않을 만큼 빠른 속도로 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
+        "image": "./image/monster08.jpg"
+    },
+    {
+        "id": 9,
+        "name": "모래 모래마녀",
+        "level": 2,
+        "habitat": "얼어붙은 오아시스",
+        "hp": 163,
+        "exp": 30,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 18,
+        "description": "하얀 모래의 기운을 머금고 금지된 사막의 주술을 외워 모래와 바람을 자유자재로 부립니다.",
+        "image": "./image/monster09.jpg"
+    },
+    {
+        "id": 10,
+        "name": "하얀 모래골렘",
+        "level": 2,
+        "habitat": "백사 평원",
+        "hp": 162,
+        "exp": 28,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 17,
+        "description": "온몸이 백사처럼 새하얗게 변이되어 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
+        "image": "./image/monster10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "하얀 심연의지네",
+        "level": 2,
+        "habitat": "백골의 묘지",
+        "hp": 161,
+        "exp": 35,
+        "drops": [
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 18,
+        "description": "온몸이 백사처럼 새하얗게 변이되어 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
+        "image": "./image/monster11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "단단한 백골병사",
+        "level": 3,
+        "habitat": "고대 거신의 잔해",
+        "hp": 278,
+        "exp": 49,
+        "drops": [
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 28,
+        "description": "돌처럼 굳어진 외피로 무장한 채 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
+        "image": "./image/monster12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "성난 백골병사",
+        "level": 3,
+        "habitat": "얼어붙은 오아시스",
+        "hp": 276,
+        "exp": 52,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 23,
+        "description": "극도로 예민하고 공격적인 성향으로 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
+        "image": "./image/monster13.jpg"
+    },
+    {
+        "id": 14,
+        "name": "단단한 모래뱀",
+        "level": 3,
+        "habitat": "모래폭풍의 눈",
+        "hp": 282,
+        "exp": 46,
+        "drops": [
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_L08",
+                "name": "사막 약초 묶음",
+                "drop_rate": 0.35,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 26,
+        "description": "돌처럼 굳어진 외피로 무장한 채 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
+        "image": "./image/monster14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "성난 백색미노타우로스",
+        "level": 3,
+        "habitat": "백사 평원",
+        "hp": 287,
+        "exp": 56,
+        "drops": [
+            {
+                "item_id": "ITEM_L06",
+                "name": "녹슨 사막 동전",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 23,
+        "description": "극도로 예민하고 공격적인 성향으로 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
+        "image": "./image/monster15.jpg"
+    },
+    {
+        "id": 16,
+        "name": "성난 오아시스악어",
+        "level": 3,
+        "habitat": "얼어붙은 오아시스",
+        "hp": 273,
+        "exp": 45,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 28,
+        "description": "극도로 예민하고 공격적인 성향으로 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
+        "image": "./image/monster16.jpg"
+    },
+    {
+        "id": 17,
+        "name": "사구 신기루망령",
+        "level": 3,
+        "habitat": "고대 거신의 잔해",
+        "hp": 282,
+        "exp": 48,
+        "drops": [
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 24,
+        "description": "거대한 모래 언덕을 영역으로 삼아 여행자에게 헛것을 보여주어 깊은 사막 한가운데로 유인하는 유령입니다.",
+        "image": "./image/monster17.jpg"
+    },
+    {
+        "id": 18,
+        "name": "사구 모래마녀",
+        "level": 3,
+        "habitat": "백골의 묘지",
+        "hp": 275,
+        "exp": 45,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 23,
+        "description": "거대한 모래 언덕을 영역으로 삼아 금지된 사막의 주술을 외워 모래와 바람을 자유자재로 부립니다.",
+        "image": "./image/monster18.jpg"
+    },
+    {
+        "id": 19,
+        "name": "사구 백골병사",
+        "level": 3,
+        "habitat": "하얀 심연의 제단",
+        "hp": 249,
+        "exp": 46,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 28,
+        "description": "거대한 모래 언덕을 영역으로 삼아 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
+        "image": "./image/monster19.jpg"
+    },
+    {
+        "id": 20,
+        "name": "단단한 선인장정령",
+        "level": 3,
+        "habitat": "달빛 사구",
+        "hp": 279,
+        "exp": 47,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 25,
+        "description": "돌처럼 굳어진 외피로 무장한 채 메마른 사막의 수분을 머금고 가시를 발사하는 식물형 정령입니다.",
+        "image": "./image/monster20.jpg"
+    },
+    {
+        "id": 21,
+        "name": "단단한 신기루망령",
+        "level": 3,
+        "habitat": "모래폭풍의 눈",
+        "hp": 286,
+        "exp": 55,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L08",
+                "name": "사막 약초 묶음",
+                "drop_rate": 0.35,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 25,
+        "description": "돌처럼 굳어진 외피로 무장한 채 여행자에게 헛것을 보여주어 깊은 사막 한가운데로 유인하는 유령입니다.",
+        "image": "./image/monster21.jpg"
+    },
+    {
+        "id": 22,
+        "name": "단단한 백사도마뱀",
+        "level": 3,
+        "habitat": "백골의 묘지",
+        "hp": 245,
+        "exp": 54,
+        "drops": [
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 27,
+        "description": "돌처럼 굳어진 외피로 무장한 채 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
+        "image": "./image/monster22.jpg"
+    },
+    {
+        "id": 23,
+        "name": "단단한 모래두더지",
+        "level": 3,
+        "habitat": "신기루 협곡",
+        "hp": 289,
+        "exp": 55,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 23,
+        "description": "돌처럼 굳어진 외피로 무장한 채 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
+        "image": "./image/monster23.jpg"
+    },
+    {
+        "id": 24,
+        "name": "사막 모래골렘",
+        "level": 4,
+        "habitat": "신기루 협곡",
+        "hp": 469,
+        "exp": 79,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 38,
+        "description": "혹독한 모래바람을 견뎌내며 진화해 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
+        "image": "./image/monster24.jpg"
+    },
+    {
+        "id": 25,
+        "name": "거친 심연의지네",
+        "level": 4,
+        "habitat": "하얀 심연의 제단",
+        "hp": 464,
+        "exp": 79,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 41,
+        "description": "사납고 난폭한 본능을 드러내며 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
+        "image": "./image/monster25.jpg"
+    },
+    {
+        "id": 26,
+        "name": "사막 오아시스악어",
+        "level": 4,
+        "habitat": "백골의 묘지",
+        "hp": 458,
+        "exp": 85,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 41,
+        "description": "혹독한 모래바람을 견뎌내며 진화해 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
+        "image": "./image/monster26.jpg"
+    },
+    {
+        "id": 27,
+        "name": "사막 화염딱정벌레",
+        "level": 4,
+        "habitat": "백골의 묘지",
+        "hp": 417,
+        "exp": 79,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 37,
+        "description": "혹독한 모래바람을 견뎌내며 진화해 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
+        "image": "./image/monster27.jpg"
+    },
+    {
+        "id": 28,
+        "name": "변이된 선인장정령",
+        "level": 4,
+        "habitat": "모래폭풍의 눈",
+        "hp": 427,
+        "exp": 80,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 41,
+        "description": "고대 마력의 영향으로 기괴하게 변해 메마른 사막의 수분을 머금고 가시를 발사하는 식물형 정령입니다.",
+        "image": "./image/monster28.jpg"
+    },
+    {
+        "id": 29,
+        "name": "변이된 백색미노타우로스",
+        "level": 4,
+        "habitat": "신기루 협곡",
+        "hp": 410,
+        "exp": 89,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 34,
+        "description": "고대 마력의 영향으로 기괴하게 변해 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
+        "image": "./image/monster29.jpg"
+    },
+    {
+        "id": 30,
+        "name": "거친 오아시스악어",
+        "level": 4,
+        "habitat": "달빛 사구",
+        "hp": 465,
+        "exp": 78,
+        "drops": [
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 40,
+        "description": "사납고 난폭한 본능을 드러내며 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
+        "image": "./image/monster30.jpg"
+    },
+    {
+        "id": 31,
+        "name": "변이된 모래두더지",
+        "level": 4,
+        "habitat": "모래폭풍의 눈",
+        "hp": 437,
+        "exp": 86,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L08",
+                "name": "사막 약초 묶음",
+                "drop_rate": 0.35,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 38,
+        "description": "고대 마력의 영향으로 기괴하게 변해 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
+        "image": "./image/monster31.jpg"
+    },
+    {
+        "id": 32,
+        "name": "거친 회오리박쥐",
+        "level": 4,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 431,
+        "exp": 73,
+        "drops": [
+            {
+                "item_id": "ITEM_L01",
+                "name": "하얀 모래 가루",
+                "drop_rate": 0.65,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 34,
+        "description": "사납고 난폭한 본능을 드러내며 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
+        "image": "./image/monster32.jpg"
+    },
+    {
+        "id": 33,
+        "name": "변이된 독침말벌",
+        "level": 4,
+        "habitat": "고대 거신의 잔해",
+        "hp": 424,
+        "exp": 73,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 35,
+        "description": "고대 마력의 영향으로 기괴하게 변해 사막의 뜨거운 바람을 가르며 치명적인 신경독을 주입하는 거대 벌입니다.",
+        "image": "./image/monster33.jpg"
+    },
+    {
+        "id": 34,
+        "name": "사막 백골병사",
+        "level": 4,
+        "habitat": "모래폭풍의 눈",
+        "hp": 419,
+        "exp": 79,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 34,
+        "description": "혹독한 모래바람을 견뎌내며 진화해 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
+        "image": "./image/monster34.jpg"
+    },
+    {
+        "id": 35,
+        "name": "야생의 결정거미",
+        "level": 4,
+        "habitat": "소금 결정 동굴",
+        "hp": 489,
+        "exp": 82,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 37,
+        "description": "길들여지지 않은 야성을 뿜어내며 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
+        "image": "./image/monster35.jpg"
+    },
+    {
+        "id": 36,
+        "name": "야생의 모래폭풍매",
+        "level": 4,
+        "habitat": "백골의 묘지",
+        "hp": 413,
+        "exp": 72,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 41,
+        "description": "길들여지지 않은 야성을 뿜어내며 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
+        "image": "./image/monster36.jpg"
+    },
+    {
+        "id": 37,
+        "name": "거친 독침말벌",
+        "level": 4,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 420,
+        "exp": 83,
+        "drops": [
+            {
+                "item_id": "ITEM_L06",
+                "name": "녹슨 사막 동전",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 35,
+        "description": "사납고 난폭한 본능을 드러내며 사막의 뜨거운 바람을 가르며 치명적인 신경독을 주입하는 거대 벌입니다.",
+        "image": "./image/monster37.jpg"
+    },
+    {
+        "id": 38,
+        "name": "야생의 모래뱀",
+        "level": 4,
+        "habitat": "달빛 사구",
+        "hp": 473,
+        "exp": 81,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 34,
+        "description": "길들여지지 않은 야성을 뿜어내며 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
+        "image": "./image/monster38.jpg"
+    },
+    {
+        "id": 39,
+        "name": "야생의 사막여우",
+        "level": 4,
+        "habitat": "신기루 협곡",
+        "hp": 474,
+        "exp": 76,
+        "drops": [
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 38,
+        "description": "길들여지지 않은 야성을 뿜어내며 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster39.jpg"
+    },
+    {
+        "id": 40,
+        "name": "그림자 회오리박쥐",
+        "level": 5,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 795,
+        "exp": 132,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 55,
+        "description": "사구의 어둠 속에 몸을 숨긴 채 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
+        "image": "./image/monster40.jpg"
+    },
+    {
+        "id": 41,
+        "name": "광폭한 결정거미",
+        "level": 5,
+        "habitat": "백사 평원",
+        "hp": 666,
+        "exp": 127,
+        "drops": [
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L08",
+                "name": "사막 약초 묶음",
+                "drop_rate": 0.35,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 53,
+        "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
+        "image": "./image/monster41.jpg"
+    },
+    {
+        "id": 42,
+        "name": "광폭한 백색미노타우로스",
+        "level": 5,
+        "habitat": "백사 평원",
+        "hp": 694,
+        "exp": 119,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 62,
+        "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
+        "image": "./image/monster42.jpg"
+    },
+    {
+        "id": 43,
+        "name": "폭풍 사구늑대",
+        "level": 5,
+        "habitat": "하얀 심연의 제단",
+        "hp": 807,
+        "exp": 121,
+        "drops": [
+            {
+                "item_id": "ITEM_L01",
+                "name": "하얀 모래 가루",
+                "drop_rate": 0.65,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 57,
+        "description": "몸 주변에 작은 모래 회오리를 두르고 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
+        "image": "./image/monster43.jpg"
+    },
+    {
+        "id": 44,
+        "name": "그림자 사구늑대",
+        "level": 5,
+        "habitat": "백사 평원",
+        "hp": 757,
+        "exp": 123,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 61,
+        "description": "사구의 어둠 속에 몸을 숨긴 채 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
+        "image": "./image/monster44.jpg"
+    },
+    {
+        "id": 45,
+        "name": "그림자 백색미노타우로스",
+        "level": 5,
+        "habitat": "모래폭풍의 눈",
+        "hp": 705,
+        "exp": 124,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 53,
+        "description": "사구의 어둠 속에 몸을 숨긴 채 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
+        "image": "./image/monster45.jpg"
+    },
+    {
+        "id": 46,
+        "name": "폭풍 모래뱀",
+        "level": 5,
+        "habitat": "백골의 묘지",
+        "hp": 771,
+        "exp": 142,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 61,
+        "description": "몸 주변에 작은 모래 회오리를 두르고 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
+        "image": "./image/monster46.jpg"
+    },
+    {
+        "id": 47,
+        "name": "강철 사막여우",
+        "level": 5,
+        "habitat": "모래폭풍의 눈",
+        "hp": 675,
+        "exp": 144,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 58,
+        "description": "강철보다 단단한 신체 구조를 지니고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster47.jpg"
+    },
+    {
+        "id": 48,
+        "name": "광폭한 사구늑대",
+        "level": 5,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 724,
+        "exp": 124,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 51,
+        "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
+        "image": "./image/monster48.jpg"
+    },
+    {
+        "id": 49,
+        "name": "그림자 결정거미",
+        "level": 5,
+        "habitat": "신기루 협곡",
+        "hp": 737,
+        "exp": 128,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L06",
+                "name": "녹슨 사막 동전",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 61,
+        "description": "사구의 어둠 속에 몸을 숨긴 채 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
+        "image": "./image/monster49.jpg"
+    },
+    {
+        "id": 50,
+        "name": "폭풍 사막여우",
+        "level": 5,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 711,
+        "exp": 135,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 55,
+        "description": "몸 주변에 작은 모래 회오리를 두르고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster50.jpg"
+    },
+    {
+        "id": 51,
+        "name": "그림자 오아시스악어",
+        "level": 5,
+        "habitat": "하얀 심연의 제단",
+        "hp": 796,
+        "exp": 120,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 57,
+        "description": "사구의 어둠 속에 몸을 숨긴 채 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
+        "image": "./image/monster51.jpg"
+    },
+    {
+        "id": 52,
+        "name": "폭풍 오아시스악어",
+        "level": 5,
+        "habitat": "백사 평원",
+        "hp": 799,
+        "exp": 142,
+        "drops": [
+            {
+                "item_id": "ITEM_L06",
+                "name": "녹슨 사막 동전",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 59,
+        "description": "몸 주변에 작은 모래 회오리를 두르고 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
+        "image": "./image/monster52.jpg"
+    },
+    {
+        "id": 53,
+        "name": "광폭한 백사도마뱀",
+        "level": 5,
+        "habitat": "백골의 묘지",
+        "hp": 746,
+        "exp": 138,
+        "drops": [
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 52,
+        "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
+        "image": "./image/monster53.jpg"
+    },
+    {
+        "id": 54,
+        "name": "광폭한 모래골렘",
+        "level": 5,
+        "habitat": "모래폭풍의 눈",
+        "hp": 741,
+        "exp": 134,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 53,
+        "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
+        "image": "./image/monster54.jpg"
+    },
+    {
+        "id": 55,
+        "name": "광폭한 모래뱀",
+        "level": 5,
+        "habitat": "하얀 심연의 제단",
+        "hp": 811,
+        "exp": 126,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 57,
+        "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
+        "image": "./image/monster55.jpg"
+    },
+    {
+        "id": 56,
+        "name": "광폭한 심연의지네",
+        "level": 5,
+        "habitat": "하얀 심연의 제단",
+        "hp": 748,
+        "exp": 131,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 58,
+        "description": "이성을 잃고 눈에 보이는 모든 것을 파괴하며 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
+        "image": "./image/monster56.jpg"
+    },
+    {
+        "id": 57,
+        "name": "폭풍 신기루망령",
+        "level": 5,
+        "habitat": "고대 거신의 잔해",
+        "hp": 751,
+        "exp": 119,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 54,
+        "description": "몸 주변에 작은 모래 회오리를 두르고 여행자에게 헛것을 보여주어 깊은 사막 한가운데로 유인하는 유령입니다.",
+        "image": "./image/monster57.jpg"
+    },
+    {
+        "id": 58,
+        "name": "강철 모래두더지",
+        "level": 5,
+        "habitat": "백사 평원",
+        "hp": 728,
+        "exp": 132,
+        "drops": [
+            {
+                "item_id": "ITEM_L08",
+                "name": "사막 약초 묶음",
+                "drop_rate": 0.35,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 60,
+        "description": "강철보다 단단한 신체 구조를 지니고 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
+        "image": "./image/monster58.jpg"
+    },
+    {
+        "id": 59,
+        "name": "심연의 심연의지네",
+        "level": 6,
+        "habitat": "소금 결정 동굴",
+        "hp": 1282,
+        "exp": 212,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 91,
+        "description": "사막 지하 깊은 곳의 어둠을 품고 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
+        "image": "./image/monster59.jpg"
+    },
+    {
+        "id": 60,
+        "name": "고대 사막여우",
+        "level": 6,
+        "habitat": "모래폭풍의 눈",
+        "hp": 1155,
+        "exp": 199,
+        "drops": [
+            {
+                "item_id": "ITEM_L01",
+                "name": "하얀 모래 가루",
+                "drop_rate": 0.65,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 92,
+        "description": "수천 년의 세월을 버텨온 신비한 힘으로 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster60.jpg"
+    },
+    {
+        "id": 61,
+        "name": "결정 사막여우",
+        "level": 6,
+        "habitat": "달빛 사구",
+        "hp": 1133,
+        "exp": 217,
+        "drops": [
+            {
+                "item_id": "ITEM_L08",
+                "name": "사막 약초 묶음",
+                "drop_rate": 0.35,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 92,
+        "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster61.jpg"
+    },
+    {
+        "id": 62,
+        "name": "심연의 백색미노타우로스",
+        "level": 6,
+        "habitat": "달빛 사구",
+        "hp": 1328,
+        "exp": 198,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 91,
+        "description": "사막 지하 깊은 곳의 어둠을 품고 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
+        "image": "./image/monster62.jpg"
+    },
+    {
+        "id": 63,
+        "name": "저주받은 독침말벌",
+        "level": 6,
+        "habitat": "달빛 사구",
+        "hp": 1259,
+        "exp": 203,
+        "drops": [
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 84,
+        "description": "고대 신전의 어두운 주술에 얽매여 사막의 뜨거운 바람을 가르며 치명적인 신경독을 주입하는 거대 벌입니다.",
+        "image": "./image/monster63.jpg"
+    },
+    {
+        "id": 64,
+        "name": "결정 결정거미",
+        "level": 6,
+        "habitat": "백골의 묘지",
+        "hp": 1180,
+        "exp": 222,
+        "drops": [
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 78,
+        "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
+        "image": "./image/monster64.jpg"
+    },
+    {
+        "id": 65,
+        "name": "결정 화염딱정벌레",
+        "level": 6,
+        "habitat": "얼어붙은 오아시스",
+        "hp": 1279,
+        "exp": 201,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L06",
+                "name": "녹슨 사막 동전",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 78,
+        "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
+        "image": "./image/monster65.jpg"
+    },
+    {
+        "id": 66,
+        "name": "심연의 오아시스악어",
+        "level": 6,
+        "habitat": "백사 평원",
+        "hp": 1151,
+        "exp": 214,
+        "drops": [
+            {
+                "item_id": "ITEM_L10",
+                "name": "오아시스 물방울",
+                "drop_rate": 0.2,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 88,
+        "description": "사막 지하 깊은 곳의 어둠을 품고 얼어붙은 오아시스 밑바닥에 숨어 다가오는 생명체를 덮칩니다.",
+        "image": "./image/monster66.jpg"
+    },
+    {
+        "id": 67,
+        "name": "심연의 석상수호병",
+        "level": 6,
+        "habitat": "백사 평원",
+        "hp": 1340,
+        "exp": 210,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L09",
+                "name": "단단한 갑각 파편",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 85,
+        "description": "사막 지하 깊은 곳의 어둠을 품고 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
+        "image": "./image/monster67.jpg"
+    },
+    {
+        "id": 68,
+        "name": "결정 석상수호병",
+        "level": 6,
+        "habitat": "소금 결정 동굴",
+        "hp": 1168,
+        "exp": 215,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 91,
+        "description": "반짝이는 소금 결정이 몸 곳곳에 돋아나 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
+        "image": "./image/monster68.jpg"
+    },
+    {
+        "id": 69,
+        "name": "저주받은 화염딱정벌레",
+        "level": 6,
+        "habitat": "얼어붙은 오아시스",
+        "hp": 1314,
+        "exp": 217,
+        "drops": [
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 80,
+        "description": "고대 신전의 어두운 주술에 얽매여 뜨거운 사막의 태양열을 등껍질에 저장했다가 폭발시키는 곤충입니다.",
+        "image": "./image/monster69.jpg"
+    },
+    {
+        "id": 70,
+        "name": "고대 백사도마뱀",
+        "level": 6,
+        "habitat": "모래폭풍의 눈",
+        "hp": 1133,
+        "exp": 217,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 81,
+        "description": "수천 년의 세월을 버텨온 신비한 힘으로 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
+        "image": "./image/monster70.jpg"
+    },
+    {
+        "id": 71,
+        "name": "심연의 모래골렘",
+        "level": 6,
+        "habitat": "소금 결정 동굴",
+        "hp": 1215,
+        "exp": 208,
+        "drops": [
+            {
+                "item_id": "ITEM_L05",
+                "name": "마른 선인장 조각",
+                "drop_rate": 0.55,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L07",
+                "name": "희미한 마력석",
+                "drop_rate": 0.25,
+                "rarity": "고급"
+            }
+        ],
+        "attack": 86,
+        "description": "사막 지하 깊은 곳의 어둠을 품고 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
+        "image": "./image/monster71.jpg"
+    },
+    {
+        "id": 72,
+        "name": "저주받은 백사도마뱀",
+        "level": 6,
+        "habitat": "달빛 사구",
+        "hp": 1103,
+        "exp": 222,
+        "drops": [
+            {
+                "item_id": "ITEM_L04",
+                "name": "부러진 송곳니",
+                "drop_rate": 0.4,
+                "rarity": "일반"
+            },
+            {
+                "item_id": "ITEM_L02",
+                "name": "거친 짐승의 가죽",
+                "drop_rate": 0.45,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 77,
+        "description": "고대 신전의 어두운 주술에 얽매여 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
+        "image": "./image/monster72.jpg"
+    },
+    {
+        "id": 73,
+        "name": "고대 모래두더지",
+        "level": 6,
+        "habitat": "소금 결정 동굴",
+        "hp": 1150,
+        "exp": 189,
+        "drops": [
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 80,
+        "description": "수천 년의 세월을 버텨온 신비한 힘으로 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
+        "image": "./image/monster73.jpg"
+    },
+    {
+        "id": 74,
+        "name": "심연의 사막여우",
+        "level": 6,
+        "habitat": "하얀 심연의 제단",
+        "hp": 1341,
+        "exp": 201,
+        "drops": [
+            {
+                "item_id": "ITEM_L06",
+                "name": "녹슨 사막 동전",
+                "drop_rate": 0.3,
+                "rarity": "고급"
+            },
+            {
+                "item_id": "ITEM_L03",
+                "name": "작은 소금 결정",
+                "drop_rate": 0.5,
+                "rarity": "일반"
+            }
+        ],
+        "attack": 90,
+        "description": "사막 지하 깊은 곳의 어둠을 품고 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster74.jpg"
+    },
+    {
+        "id": 75,
+        "name": "정예 모래뱀",
+        "level": 7,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 1870,
+        "exp": 304,
+        "drops": [
+            {
+                "item_id": "ITEM_H001",
+                "name": "정예의 모래뱀의 심장 파편",
+                "drop_rate": 0.25,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_H002",
+                "name": "타락한 모래뱀의 마력 핵",
+                "drop_rate": 0.33,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 122,
+        "description": "수많은 전투를 거쳐 살아남은 강자로 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
+        "image": "./image/monster75.jpg"
+    },
+    {
+        "id": 76,
+        "name": "정예 심연의지네",
+        "level": 7,
+        "habitat": "소금 결정 동굴",
+        "hp": 1867,
+        "exp": 339,
+        "drops": [
+            {
+                "item_id": "ITEM_H003",
+                "name": "백색의 심연의지네의 영혼석",
+                "drop_rate": 0.35,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 134,
+        "description": "수많은 전투를 거쳐 살아남은 강자로 수십 개의 다리로 모래 깊숙한 곳에서 진동을 일으키며 돌진합니다.",
+        "image": "./image/monster76.jpg"
+    },
+    {
+        "id": 77,
+        "name": "정예 사구늑대",
+        "level": 7,
+        "habitat": "고대 거신의 잔해",
+        "hp": 2034,
+        "exp": 348,
+        "drops": [
+            {
+                "item_id": "ITEM_H004",
+                "name": "학살자의 사구늑대의 훈장",
+                "drop_rate": 0.15,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_H005",
+                "name": "수호자의 사구늑대의 룬 문자판",
+                "drop_rate": 0.26,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 115,
+        "description": "수많은 전투를 거쳐 살아남은 강자로 무리를 지어 사막의 밤을 지배하는 날카로운 송곳니의 포식자입니다.",
+        "image": "./image/monster77.jpg"
+    },
+    {
+        "id": 78,
+        "name": "학살자 사막여우",
+        "level": 7,
+        "habitat": "모래폭풍의 눈",
+        "hp": 2000,
+        "exp": 359,
+        "drops": [
+            {
+                "item_id": "ITEM_H006",
+                "name": "파멸의 사막여우의 비늘",
+                "drop_rate": 0.26,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 135,
+        "description": "침입자들을 무자비하게 도륙하는 존재로 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster78.jpg"
+    },
+    {
+        "id": 79,
+        "name": "백색의 모래마녀",
+        "level": 7,
+        "habitat": "고대 거신의 잔해",
+        "hp": 2211,
+        "exp": 362,
+        "drops": [
+            {
+                "item_id": "ITEM_H007",
+                "name": "신기루의 모래마녀의 발톱",
+                "drop_rate": 0.36,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_H008",
+                "name": "절망의 모래마녀의 눈동자",
+                "drop_rate": 0.3,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 127,
+        "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 금지된 사막의 주술을 외워 모래와 바람을 자유자재로 부립니다.",
+        "image": "./image/monster79.jpg"
+    },
+    {
+        "id": 80,
+        "name": "백색의 백골병사",
+        "level": 7,
+        "habitat": "신기루 협곡",
+        "hp": 1957,
+        "exp": 358,
+        "drops": [
+            {
+                "item_id": "ITEM_H009",
+                "name": "재앙의 백골병사의 왕관 조각",
+                "drop_rate": 0.29,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_H010",
+                "name": "군주의 백골병사의 마법서 잔해",
+                "drop_rate": 0.32,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 120,
+        "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
+        "image": "./image/monster80.jpg"
+    },
+    {
+        "id": 81,
+        "name": "백색의 모래두더지",
+        "level": 7,
+        "habitat": "달빛 사구",
+        "hp": 1981,
+        "exp": 324,
+        "drops": [
+            {
+                "item_id": "ITEM_H011",
+                "name": "초월한 모래두더지의 결정체",
+                "drop_rate": 0.24,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 128,
+        "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 하얀 모래 속을 빠르게 파고들며 먹잇감을 노리는 작은 짐승입니다.",
+        "image": "./image/monster81.jpg"
+    },
+    {
+        "id": 82,
+        "name": "백색의 모래골렘",
+        "level": 7,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 2120,
+        "exp": 336,
+        "drops": [
+            {
+                "item_id": "ITEM_H012",
+                "name": "불멸의 모래골렘의 정수",
+                "drop_rate": 0.28,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 130,
+        "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 고대 마법으로 뭉쳐진 하얀 모래와 바위로 이루어진 거대한 인형입니다.",
+        "image": "./image/monster82.jpg"
+    },
+    {
+        "id": 83,
+        "name": "타락한 백사도마뱀",
+        "level": 7,
+        "habitat": "소금 결정 동굴",
+        "hp": 2183,
+        "exp": 353,
+        "drops": [
+            {
+                "item_id": "ITEM_H013",
+                "name": "고대 백사도마뱀의 부적",
+                "drop_rate": 0.32,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 128,
+        "description": "사악한 마기에 잠식되어 흉포해진 모습으로 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
+        "image": "./image/monster83.jpg"
+    },
+    {
+        "id": 84,
+        "name": "학살자 모래폭풍매",
+        "level": 7,
+        "habitat": "백사 평원",
+        "hp": 1862,
+        "exp": 338,
+        "drops": [
+            {
+                "item_id": "ITEM_H014",
+                "name": "심연의 모래폭풍매의 고대 인장",
+                "drop_rate": 0.32,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_H015",
+                "name": "광휘의 모래폭풍매의 깃털",
+                "drop_rate": 0.23,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 120,
+        "description": "침입자들을 무자비하게 도륙하는 존재로 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
+        "image": "./image/monster84.jpg"
+    },
+    {
+        "id": 85,
+        "name": "백색의 석상수호병",
+        "level": 7,
+        "habitat": "고대 거신의 잔해",
+        "hp": 2086,
+        "exp": 345,
+        "drops": [
+            {
+                "item_id": "ITEM_H016",
+                "name": "칠흑의 석상수호병의 송곳니",
+                "drop_rate": 0.24,
+                "rarity": "희귀"
+            },
+            {
+                "item_id": "ITEM_H017",
+                "name": "폭풍의 석상수호병의 갑주 파편",
+                "drop_rate": 0.26,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 126,
+        "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
+        "image": "./image/monster85.jpg"
+    },
+    {
+        "id": 86,
+        "name": "백색의 결정거미",
+        "level": 7,
+        "habitat": "소금 결정 동굴",
+        "hp": 1876,
+        "exp": 325,
+        "drops": [
+            {
+                "item_id": "ITEM_H018",
+                "name": "결정화된 결정거미의 성물",
+                "drop_rate": 0.34,
+                "rarity": "희귀"
+            }
+        ],
+        "attack": 123,
+        "description": "순백의 재앙이라 불릴 만큼 압도적인 기세로 소금 동굴 천장에 투명한 거미줄을 치고 침입자를 기다립니다.",
+        "image": "./image/monster86.jpg"
+    },
+    {
+        "id": 87,
+        "name": "파멸의 회오리박쥐",
+        "level": 8,
+        "habitat": "소금 결정 동굴",
+        "hp": 3491,
+        "exp": 517,
+        "drops": [
+            {
+                "item_id": "ITEM_H019",
+                "name": "저주받은 회오리박쥐의 계약서",
+                "drop_rate": 0.4,
+                "rarity": "영웅"
+            },
+            {
+                "item_id": "ITEM_H020",
+                "name": "성스러운 회오리박쥐의 모래시계",
+                "drop_rate": 0.36,
+                "rarity": "영웅"
+            }
+        ],
+        "attack": 204,
+        "description": "지나가는 자리마다 황폐함만을 남기며 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
+        "image": "./image/monster87.jpg"
+    },
+    {
+        "id": 88,
+        "name": "신기루 백골병사",
+        "level": 8,
+        "habitat": "백골의 묘지",
+        "hp": 3179,
+        "exp": 520,
+        "drops": [
+            {
+                "item_id": "ITEM_H021",
+                "name": "영혼의 백골병사의 열쇠",
+                "drop_rate": 0.22,
+                "rarity": "영웅"
+            }
+        ],
+        "attack": 167,
+        "description": "환영과 실체를 오가며 적을 농락하고 과거 사막에서 길을 잃고 쓰러진 전사의 원혼이 깃든 해골입니다.",
+        "image": "./image/monster88.jpg"
+    },
+    {
+        "id": 89,
+        "name": "수호자 백색미노타우로스",
+        "level": 8,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 3125,
+        "exp": 563,
+        "drops": [
+            {
+                "item_id": "ITEM_H022",
+                "name": "시간의 백색미노타우로스의 보주",
+                "drop_rate": 0.37,
+                "rarity": "영웅"
+            }
+        ],
+        "attack": 198,
+        "description": "사막의 비밀을 지키기 위해 탄생한 병기로 거대한 전투 도끼를 휘두르며 사막의 전장을 휩쓰는 맹수 인간입니다.",
+        "image": "./image/monster89.jpg"
+    },
+    {
+        "id": 90,
+        "name": "신기루 석상수호병",
+        "level": 8,
+        "habitat": "달빛 사구",
+        "hp": 3447,
+        "exp": 525,
+        "drops": [
+            {
+                "item_id": "ITEM_H023",
+                "name": "공허의 석상수호병의 혈석",
+                "drop_rate": 0.21,
+                "rarity": "영웅"
+            }
+        ],
+        "attack": 178,
+        "description": "환영과 실체를 오가며 적을 농락하고 잊혀진 모래 신전의 입구를 수천 년간 지켜온 살아있는 석상입니다.",
+        "image": "./image/monster90.jpg"
+    },
+    {
+        "id": 91,
+        "name": "절망의 사막여우",
+        "level": 8,
+        "habitat": "신기루 협곡",
+        "hp": 3406,
+        "exp": 544,
+        "drops": [
+            {
+                "item_id": "ITEM_H024",
+                "name": "정예의 사막여우의 심장 파편",
+                "drop_rate": 0.19,
+                "rarity": "영웅"
+            }
+        ],
+        "attack": 171,
+        "description": "마주치는 것만으로도 전의를 상실케 하며 커다란 귀로 모래 아래의 미세한 진동까지 포착해 사냥합니다.",
+        "image": "./image/monster91.jpg"
+    },
+    {
+        "id": 92,
+        "name": "신기루 백사도마뱀",
+        "level": 8,
+        "habitat": "소금 결정 동굴",
+        "hp": 3117,
+        "exp": 553,
+        "drops": [
+            {
+                "item_id": "ITEM_H025",
+                "name": "타락한 백사도마뱀의 마력 핵",
+                "drop_rate": 0.34,
+                "rarity": "영웅"
+            }
+        ],
+        "attack": 193,
+        "description": "환영과 실체를 오가며 적을 농락하고 눈부신 백사 위에서 완벽하게 위장하여 기습하는 파충류입니다.",
+        "image": "./image/monster92.jpg"
+    },
+    {
+        "id": 93,
+        "name": "절망의 모래폭풍매",
+        "level": 8,
+        "habitat": "달빛 사구",
+        "hp": 3300,
+        "exp": 557,
+        "drops": [
+            {
+                "item_id": "ITEM_H026",
+                "name": "백색의 모래폭풍매의 영혼석",
+                "drop_rate": 0.29,
+                "rarity": "영웅"
+            },
+            {
+                "item_id": "ITEM_H027",
+                "name": "학살자의 모래폭풍매의 훈장",
+                "drop_rate": 0.17,
+                "rarity": "영웅"
+            }
+        ],
+        "attack": 194,
+        "description": "마주치는 것만으로도 전의를 상실케 하며 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
+        "image": "./image/monster93.jpg"
+    },
+    {
+        "id": 94,
+        "name": "재앙의 회오리박쥐",
+        "level": 9,
+        "habitat": "소금 결정 동굴",
+        "hp": 5484,
+        "exp": 941,
+        "drops": [
+            {
+                "item_id": "ITEM_H028",
+                "name": "수호자의 회오리박쥐의 룬 문자판",
+                "drop_rate": 0.21,
+                "rarity": "전설"
+            }
+        ],
+        "attack": 253,
+        "description": "사막의 생태계를 뒤흔드는 재앙 그 자체로 협곡의 강한 바람을 타고 날아다니며 초음파로 적을 교란합니다.",
+        "image": "./image/monster94.jpg"
+    },
+    {
+        "id": 95,
+        "name": "재앙의 모래뱀",
+        "level": 9,
+        "habitat": "백사 평원",
+        "hp": 5779,
+        "exp": 887,
+        "drops": [
+            {
+                "item_id": "ITEM_H029",
+                "name": "파멸의 모래뱀의 비늘",
+                "drop_rate": 0.22,
+                "rarity": "전설"
+            },
+            {
+                "item_id": "ITEM_H030",
+                "name": "신기루의 모래뱀의 발톱",
+                "drop_rate": 0.21,
+                "rarity": "전설"
+            }
+        ],
+        "attack": 292,
+        "description": "사막의 생태계를 뒤흔드는 재앙 그 자체로 모래 언덕을 미끄러지듯 이동하며 독니로 사냥감을 마비시킵니다.",
+        "image": "./image/monster95.jpg"
+    },
+    {
+        "id": 96,
+        "name": "초월한 모래폭풍매",
+        "level": 9,
+        "habitat": "신기루 협곡",
+        "hp": 5421,
+        "exp": 839,
+        "drops": [
+            {
+                "item_id": "ITEM_H031",
+                "name": "절망의 모래폭풍매의 눈동자",
+                "drop_rate": 0.26,
+                "rarity": "전설"
+            }
+        ],
+        "attack": 298,
+        "description": "필멸자의 한계를 뛰어넘은 마력을 휘두르며 거대한 날갯짓으로 국지적인 모래폭풍을 일으키는 맹금류입니다.",
+        "image": "./image/monster96.jpg"
+    },
+    {
+        "id": 97,
+        "name": "군주 선인장정령",
+        "level": 9,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 5234,
+        "exp": 790,
+        "drops": [
+            {
+                "item_id": "ITEM_H032",
+                "name": "재앙의 선인장정령의 왕관 조각",
+                "drop_rate": 0.35,
+                "rarity": "전설"
+            }
+        ],
+        "attack": 251,
+        "description": "동족들을 거느리며 일대를 호령하는 지배자로 메마른 사막의 수분을 머금고 가시를 발사하는 식물형 정령입니다.",
+        "image": "./image/monster97.jpg"
+    },
+    {
+        "id": 98,
+        "name": "하얀사막의 패왕 아누비스",
+        "level": 10,
+        "habitat": "잊혀진 모래 신전",
+        "hp": 103914,
+        "exp": 22195,
+        "drops": [
+            {
+                "item_id": "BOSS_001",
+                "name": "패왕의 황금 심장",
+                "drop_rate": 0.15,
+                "rarity": "신화"
+            },
+            {
+                "item_id": "BOSS_002",
+                "name": "사막 지배자의 지팡이 도면",
+                "drop_rate": 0.25,
+                "rarity": "전설"
+            }
+        ],
+        "attack": 913,
+        "description": "하얀사막의 모든 모래와 망자를 지배하는 고대 신전의 절대적인 지배자입니다.",
+        "image": "./image/monster98.jpg"
+    },
+    {
+        "id": 99,
+        "name": "태초의 백사룡 세르펜스",
+        "level": 10,
+        "habitat": "모래폭풍의 눈",
+        "hp": 115716,
+        "exp": 19982,
+        "drops": [
+            {
+                "item_id": "BOSS_003",
+                "name": "백사룡의 역린",
+                "drop_rate": 0.12,
+                "rarity": "신화"
+            },
+            {
+                "item_id": "BOSS_004",
+                "name": "폭풍을 가르는 용의 날개막",
+                "drop_rate": 0.3,
+                "rarity": "전설"
+            }
+        ],
+        "attack": 1056,
+        "description": "날갯짓 한 번으로 대륙 전체에 하얀 모래폭풍을 불러일으키는 고대 용입니다.",
+        "image": "./image/monster99.jpg"
+    },
+    {
+        "id": 100,
+        "name": "종말의 거신 아틀라스 제로",
+        "level": 10,
+        "habitat": "하얀 심연의 제단",
+        "hp": 102841,
+        "exp": 23199,
+        "drops": [
+            {
+                "item_id": "BOSS_005",
+                "name": "제단의 영원한 동력핵",
+                "drop_rate": 0.1,
+                "rarity": "신화"
+            },
+            {
+                "item_id": "BOSS_006",
+                "name": "거신의 아다만티움 장갑판",
+                "drop_rate": 0.2,
+                "rarity": "전설"
+            }
+        ],
+        "attack": 1126,
+        "description": "하얀사막이 탄생하던 순간부터 잠들어 있던 고대 문명의 최종 병기입니다.",
+        "image": "./image/monster100.jpg"
+    },
+    {
+        "id": 101,
+        "name": "칠흑의아수라",
+        "level": 10,
+        "habitat": "사막의 블랙홀",
+        "hp": 140000,
+        "exp": 28000,
+        "attack": 1800,
+        "drops": [
+            {
+                "name": "블랙홀의 조각"
+            },
+            {
+                "name": "절대방어의 갑옷"
+            }
+        ],
+        "description": "사막 지하 가장 깊은 아틀라스 제로에 의해 곳에 봉인된 괴물. 이 전에 하얀 사막을 지배하던 왕이었는데.. 어째서인지 변모한 모습을 보이고 있다. 아틀라스 제로조차도 다시 봉인이 풀리면 이 몬스터를 저지할 수 없다.   ",
+        "image": "http://127.0.0.1:8000/image/22c5eb1b483b49a88003df68c76bd2a1.jpg"
+    },
+    {
+        "id": 102,
+        "name": "절망의 제로",
+        "level": 12,
+        "habitat": "..??얼음궁전",
+        "hp": 280010,
+        "exp": 32004,
+        "attack": 3254,
+        "drops": [
+            {
+                "name": "수정구슬"
+            },
+            {
+                "name": "시간의 검"
+            },
+            {
+                "name": "엔드리스"
+            }
+        ],
+        "description": "최종 흑막이자 하얀 사막 흑화에 대한 만악의 근원. 칠흑의 아수라 또한 그녀에 의해 조종 당하고 있었을 뿐이다. 하지만 그녀에 대해서 어떤 유저들도 npc들도 몬스터들도 정체를 알지 못한다. 지나가는 곳을 모두 빙하기로 만들고 어떤 공격도 그녀에게 통하지 않는다. 그녀를 잡을 수 있는 방법은 없을것이다..  ",
+        "image": "http://127.0.0.1:8000/image/96bb3e470d594f62b935d0d0ad436a01.jpg"
+    }
 ]

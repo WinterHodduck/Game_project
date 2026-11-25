@@ -1,8 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routers import monsters, notices, posts
+from routers import monsters, notices, posts, pro
 from routers.monsters import mount_monster_images
+
+import os
+import shutil
+from uuid import uuid4
+from fastapi import APIRouter, File, HTTPException, UploadFile
+
+UPLOAD_DIR = "storage/image"
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 app = FastAPI()
 
@@ -17,6 +25,7 @@ app.add_middleware(
 app.include_router(notices.router)
 app.include_router(monsters.router)
 app.include_router(posts.router)
+app.include_router(pro.router)
 
 mount_monster_images(app)
 
@@ -31,3 +40,5 @@ def home():
 def make_practice():
     print("연습 중입니다.")
     return {"message": "연습중입니다", "cnt": 2}
+
+
