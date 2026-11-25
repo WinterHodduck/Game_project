@@ -41,9 +41,8 @@ function oneLine(post) {
   li.innerHTML = `
     <div class="post-likes">${post.likes}</div>
     <div class="post-body">
-        <a class="post-title" href="readPostDetail.html?id=${post.id}">
-            <span class="post-category">[${post.category}]</span>${post.title}
-        </a>
+    <span class="post-category">[${post.category}]</span>    
+    <a class="post-title" href="readPostDetail.html?id=${post.id}">${post.title}</a>
         <div class = "post-data">
             <span>💬 ${post.comments}</span>
             <span>👁 ${post.views}</span>

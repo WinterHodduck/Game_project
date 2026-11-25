@@ -29,7 +29,8 @@ function renderPosts(items, total, page) {
     .map(
       (p, i) => `
   <tr>
-    <td>${total - (page - 1) * PAGE_SIZE - i}</td> 
+    <td>${total - (page - 1) * PAGE_SIZE - i}</td>
+    <td>[${escapeHtml(p.category)}]</td> 
     <td>
     <a href="postDetail.html?id=${p.id}">${escapeHtml(p.title)}</a>
     ${p.comments ? `<span class="cmt">[${p.comments}]</span>` : ""}
@@ -37,6 +38,8 @@ function renderPosts(items, total, page) {
     <td>${escapeHtml(p.author)}</td>
     <td>${p.createdAt.slice(0, 10)}</td>
     <td>${p.views}</td>
+    <td><button onclick="deletePost(${p.id})">삭제</button></td>
+    <td><a href="editPost.html?id=${p.id}">수정</a></td>   
   </tr>
 `,
     )
